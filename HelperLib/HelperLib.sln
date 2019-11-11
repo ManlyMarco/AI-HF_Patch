@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperLib", "HelperLib.csproj", "{79237A5C-6C62-400A-BBDD-3DA1CA327973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperLibTests", "..\HelperLibTests\HelperLibTests.csproj", "{B4D26C09-3E4F-428E-A6CA-504B3FAF38DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79237A5C-6C62-400A-BBDD-3DA1CA327973}.Debug|x86.ActiveCfg = Debug|x86
+		{79237A5C-6C62-400A-BBDD-3DA1CA327973}.Debug|x86.Build.0 = Debug|x86
+		{79237A5C-6C62-400A-BBDD-3DA1CA327973}.Release|x86.ActiveCfg = Debug|x86
+		{79237A5C-6C62-400A-BBDD-3DA1CA327973}.Release|x86.Build.0 = Debug|x86
+		{B4D26C09-3E4F-428E-A6CA-504B3FAF38DB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B4D26C09-3E4F-428E-A6CA-504B3FAF38DB}.Debug|x86.Build.0 = Debug|Any CPU
+		{B4D26C09-3E4F-428E-A6CA-504B3FAF38DB}.Release|x86.ActiveCfg = Release|Any CPU
+		{B4D26C09-3E4F-428E-A6CA-504B3FAF38DB}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A581926-C351-4668-940D-1051BAC0F435}
+	EndGlobalSection
+EndGlobal
