@@ -1,8 +1,8 @@
-![preview](https://user-images.githubusercontent.com/39247311/49796741-cf723180-fd3d-11e8-8b8a-2d4d3de6b568.PNG)
+![preview](https://user-images.githubusercontent.com/39247311/68624031-2c3e1500-04d6-11ea-8856-513ffa207576.PNG)
 # HF Patch for AI-Syoujyo / AI-Shoujo / AI-Girl!
 A patch for [AI-Shoujo](http://www.illusion.jp/preview/aisyoujyo/index.php) with all free updates, fan-made English translations and essential mods. It will allow you to load all character cards and scenes and give you countless gameplay improvements while still keeping the original, uncluttered and clean feel of the game.
 
-All content is tested and fixed (or removed) as needed before each update, providing a stable platform for further modding. HF Patch can also repair many common issues, try it if you have issues.
+All content is tested and fixed (or removed) as needed before each update. HF Patch can repair many common problems, try it if you have issues with your game or mod setup. By default, it cleans the game before applying new mods, providing a stable platform for further modding.
 
 HF Patch does not contain the full game, paid expansions or any other pirated content. You have to buy the game and expansions separately. You can buy the game [on DMM](https://dlsoft.dmm.co.jp/detail/illusion_0028/).
 
