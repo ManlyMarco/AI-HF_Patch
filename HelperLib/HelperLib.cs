@@ -31,7 +31,7 @@ namespace HelperLib
         [DllExport("SetConfigDefaults", CallingConvention = CallingConvention.StdCall)]
         public static void SetConfigDefaults([MarshalAs(UnmanagedType.LPWStr)] string path)
         {
-            
+
         }
 
         [DllExport("WriteVersionFile", CallingConvention = CallingConvention.StdCall)]
@@ -47,7 +47,9 @@ namespace HelperLib
 
                 contents += "HF Patch v" + version;
 
+                if (File.Exists(verPath)) File.SetAttributes(verPath, FileAttributes.Normal);
                 File.WriteAllText(verPath, contents);
+                File.SetAttributes(verPath, FileAttributes.Hidden | FileAttributes.Archive);
             }
             catch (Exception e)
             {
@@ -59,7 +61,7 @@ namespace HelperLib
         public static void FixConfig([MarshalAs(UnmanagedType.LPWStr)] string path)
         {
             var ud = Path.Combine(path, @"UserData\setup.xml");
-            
+
             try
             {
                 using (var reader = File.OpenRead(ud))
@@ -99,6 +101,94 @@ namespace HelperLib
                 throw new Exception();
         }
 
+        [DllExport("CreateBackup", CallingConvention = CallingConvention.StdCall)]
+        public static void CreateBackup([MarshalAs(UnmanagedType.LPWStr)] string path)
+        {
+            try
+            {
+                var fullPath = Path.GetFullPath(path);
+                var filesToBackup = new List<string>();
+
+                var bepinPath = Path.Combine(fullPath, "BepInEx");
+                if (Directory.Exists(bepinPath))
+                    filesToBackup.AddRange(Directory.GetFiles(bepinPath, "*", SearchOption.AllDirectories));
+
+                var scriptsPath = Path.Combine(fullPath, "scripts");
+                if (Directory.Exists(scriptsPath))
+                    filesToBackup.AddRange(Directory.GetFiles(scriptsPath, "*", SearchOption.AllDirectories));
+
+                var dhhPath = Path.Combine(fullPath, "DHH_Data");
+                if (Directory.Exists(dhhPath))
+                    filesToBackup.AddRange(Directory.GetFiles(dhhPath, "*", SearchOption.AllDirectories));
+
+                if (!filesToBackup.Any()) return;
+
+                using (var file = File.OpenWrite(Path.Combine(fullPath, $"Plugin_Backup_{DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss")}.zip")))
+                using (var zip = new ZipArchive(file, ZipArchiveMode.Create, false, Encoding.UTF8))
+                {
+                    foreach (var toAdd in filesToBackup)
+                    {
+                        try
+                        {
+                            using (var toAddStream = File.OpenRead(toAdd))
+                            {
+                                var entry = zip.CreateEntry(toAdd.Substring(fullPath.Length + 1), CompressionLevel.Fastest);
+                                using (var entryStream = entry.Open())
+                                    toAddStream.CopyTo(entryStream);
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            AppendLog(path, $"Failed to add file {toAdd} to backup - {ex}");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                AppendLog(path, $"Failed to create backup - {ex}");
+            }
+        }
+
+        [DllExport("RemoveModsExceptModpacks", CallingConvention = CallingConvention.StdCall)]
+        public static void RemoveModsExceptModpacks([MarshalAs(UnmanagedType.LPWStr)] string path)
+        {
+            try
+            {
+                var modsPath = Path.GetFullPath(Path.Combine(path, "mods"));
+                if (!Directory.Exists(modsPath)) return;
+
+                var acceptableDirs = new[]{
+                    "Sideloader Modpack",
+                    "Sideloader Modpack - Bleeding Edge",
+                    "Sideloader Modpack - Maps",
+                    "Sideloader Modpack - MaterialEditor Shaders",
+                    "Sideloader Modpack - Studio",
+                    "Sideloader Modpack - Uncensor Selector",
+                };
+
+                var fullAcceptableDirs = acceptableDirs.Select(s => Path.Combine(modsPath, s) + "\\").ToArray();
+
+                foreach (var file in Directory.GetFiles(modsPath, "*", SearchOption.AllDirectories))
+                {
+                    if (fullAcceptableDirs.Any(x => file.StartsWith(x, StringComparison.OrdinalIgnoreCase))) continue;
+
+                    try
+                    {
+                        File.Delete(file);
+                    }
+                    catch (Exception ex)
+                    {
+                        AppendLog(path, $"Failed to remove file {file} from mods directory - {ex}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                AppendLog(path, $"Failed to remove old mods from the mods directory - {ex}");
+            }
+        }
+
         [DllExport("RemoveJapaneseCards", CallingConvention = CallingConvention.StdCall)]
         public static void RemoveJapaneseCards([MarshalAs(UnmanagedType.LPWStr)] string path)
         {
@@ -109,7 +199,7 @@ namespace HelperLib
         {
             try
             {
-                foreach (var subdir in new [] { @"abdata\list\characustom" , @"abdata\studio\info", @"abdata\housing\info" })
+                foreach (var subdir in new[] { @"abdata\list\characustom", @"abdata\studio\info", @"abdata\housing\info" })
                 {
                     var ld = Path.Combine(path, subdir);
                     if (Directory.Exists(ld))
