@@ -1,7 +1,7 @@
 ﻿;--------------------------------------------Full game name for naming patch itself and desktop icons
 #define NAME "AI-Shoujo"
 ;----------------------------------------------------------------------------Current HF Patch version
-#define VERSION "2.0"
+#define VERSION "2.0.1"
 ;----------------------------------------------------------------------------------------------------
 #include "_Common\Header.iss"
 
@@ -118,8 +118,8 @@ Name: "Feature\AI_BrowserFolders"; Description: "AI_BrowserFolders v1.5 (Adds fo
 Name: "Feature\KK_StudioObjectMoveHotkeys"; Description: "AI_StudioObjectMoveHotkeys v1.0 (Adds T/Y/U/I hotkeys for manipulating items in studio)"; Types: full_en full extra
 Name: "Feature\AI_FKIK"; Description: "AI_FKIK v1.1 (Adds FK/IK mode in studio)"; Types: full_en full extra
 
-;Name: "Feature\Bra"; Description: "Bra Push-Up Mod v1.1.3 (Bras affect breast shape)"; Types: extra
-Name: "Feature\Heelz"; Description: "Heelz v1.11 (Support for high heel shoes)"; Types: full_en full extra
+Name: "Feature\Bra"; Description: "Bra Push-Up Mod v1.1.3 (Bras affect breast shape)(Only JP release)"; Types: extra
+Name: "Feature\Heelz"; Description: "Heelz v1.11 (Support for high heel shoes)(Only JP release)"; Types: full_en full extra
 Name: "Feature\AI_ReverseTrap"; Description: "AI_ReverseTrap v1.0 (Can make girls act like guys)"; Types: full_en full extra
 Name: "Feature\AI_HeightBar"; Description: "AI_HeightBar v3.2 (Adds height measure bar to maker)"; Types: full_en full extra
 Name: "Feature\AI_CharacterReplacer"; Description: "AI_CharacterReplacer v1.6.1 (Can replace default maker characters)"; Types: full_en full extra
@@ -239,8 +239,8 @@ Source: "Input\_Feature\AI_BrowserFolders.dll"; DestDir: "{app}\BepInEx\plugins"
 Source: "Input\_Feature\AI_StudioObjectMoveHotkeys v1.0\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: Feature\KK_StudioObjectMoveHotkeys
 Source: "Input\_Feature\AI_FKIK v1.1\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: Feature\AI_FKIK
 
-;Source: "Input\_Feature\PushUpAI.dll"; DestDir: "{app}\BepInEx\plugins"; Flags: ignoreversion recursesubdirs; Components: Feature\Bra
-Source: "Input\_Feature\Heelz v1.01\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: Feature\Heelz
+Source: "Input\_Feature\PushUpAI.dll"; DestDir: "{app}\BepInEx\plugins"; Flags: ignoreversion recursesubdirs; Components: Feature\Bra; Check: not IsSteam
+Source: "Input\_Feature\Heelz v1.01\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: Feature\Heelz; Check: not IsSteam
 Source: "Input\_Feature\AI_ReverseTrap.dll"; DestDir: "{app}\BepInEx\plugins"; Flags: ignoreversion recursesubdirs; Components: Feature\AI_ReverseTrap
 Source: "Input\_Feature\AI_HeightBar.dll"; DestDir: "{app}\BepInEx\plugins"; Flags: ignoreversion recursesubdirs; Components: Feature\AI_HeightBar
 Source: "Input\_Feature\AI_CharacterReplacer.dll"; DestDir: "{app}\BepInEx\plugins"; Flags: ignoreversion recursesubdirs; Components: Feature\AI_CharacterReplacer
@@ -278,6 +278,10 @@ Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - Uncensor Selector" 
 Type: files; Name: "{app}\0Harmony.dll"
 Type: files; Name: "{app}\BepInEx.dll"
 Type: files; Name: "{app}\Mono.Cecil.dll"
+
+; Has issues
+Type: files; Name: "{app}\BepInEx\plugins\Heelz.dll"; Check: IsSteam
+Type: files; Name: "{app}\BepInEx\plugins\PushUpAI.dll"; Check: IsSteam
 
 ; Disable DHH by default, prevent both disabled and enabled dlls existing
 Type: files; Name: "{app}\BepInEx\plugins\DHH_AI4.dll"; Components: Feature\DHH
