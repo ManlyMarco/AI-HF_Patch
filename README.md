@@ -13,7 +13,7 @@ Check the [Releases](https://github.com/ManlyMarco/AI-HF_Patch/releases) page fo
 
 ## How to install
 1. Install the game and any paid expansions that you want.
-2. Download the latest HF Patch to any directory and run it.
+2. Download the latest HF Patch from the [releases page](https://github.com/ManlyMarco/AI-HF_Patch/releases) to any directory and run it.
 3. You can customize the install but for beginners it's recommended to use the default settings.
 4. Wait until it's done and enjoy the game!
 
