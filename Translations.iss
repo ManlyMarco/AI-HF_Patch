@@ -7,8 +7,8 @@ customInstall=Custom installation
 
 MsgInvalidModsDetected=WARNING - Outdated or useless plugins/files were detected in your BepInEx directory. To avoid issues all mods will be deleted.
 MsgKplugDetected=WARNING - KoikPlugins was detected and will be removed if you start installation to avoid potential compatibility issues (settings will not be removed).%n%nPlease follow KoikPlugins manual on how to install it again after patching is done.
-MsgIncompatibleModsDetected=WARNING - Incompatible mods have been detected in your game folder! You are using very outdated mods or mods from other games in Koikatsu, which WILL cause problems. All old mods will have to be removed to fix this.
-MsgExeNotFound=WARNING - AI-Shoujo files were not found in selected directory. This patch has to be installed directly to the main Koikatsu game directory in order to work properly.%n%nAre you sure that this directory is correct?
+MsgIncompatibleModsDetected=WARNING - Incompatible mods have been detected in your game folder! You are using very outdated mods or mods from other games, which WILL cause problems. All old mods will have to be removed to fix this.
+MsgExeNotFound=WARNING - AI-Shoujo files were not found in selected directory. This patch has to be installed directly to the main game directory in order to work properly.%n%nAre you sure that this directory is correct?
 MsgMissingGameFiles=ERROR - Critical game files are missing, make sure this is the game directory. If the directory is correct you have to reinstall the game.
 
 MsgMissingDLC1=NOTICE - You are missing the Koikatu! Ex - Additional Personality Pack extension (07/27 2018 Summer Paid DLC). It adds 3 new personalities and new items.%n%nIf you want to use it, install it BEFORE running HF Patch.
@@ -23,6 +23,7 @@ RunGame=&Run AI-Shoujo
 RunWiki=Open AI-Shoujo wiki (FAQ, English manual)
 RunDiscord=Join Illusion Soft Discord channel (Help, updates, sharing)
 RunHF=Open HongFire release thread
+StartUpdate=Download Sideloader Modpack for Studio or look for updates (can play while downloading)
 
 IconGame=AI-Shoujo launcher
 
@@ -68,6 +69,7 @@ jp.RunGame=ゲームを始める
 jp.RunWiki=オープン英語AI-Shoujoのwiki（FAQ、マニュアル）
 jp.RunDiscord=英語のDiscordチャンネルに参加する（ヘルプ、アップデート、カード、モッズの共有）
 jp.RunHF=HongFireディスカッションスレッドを開く（英語）
+jp.StartUpdate=スタジオ用のSideloader Modpackをダウンロードするか、更新検索を開始してください（ダウンロードしながら再生できます）
 
 jp.IconGame=ＡＩ*少女 ランチャー
 

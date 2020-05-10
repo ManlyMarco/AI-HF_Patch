@@ -4,9 +4,6 @@ AppPublisher=ManlyMarco
 AppVersion={#VERSION}
 VersionInfoVersion={#VERSION}
 
-AppName={#NAME} HF Patch
-OutputBaseFilename={#NAME} HF Patch v{#VERSION}
-
 Uninstallable=no
 DisableProgramGroupPage=yes
 OutputDir=.\Output
@@ -21,6 +18,6 @@ WizardImageBackColor=$FFFFFF
 WizardImageFile=banner.bmp
 SetupIconFile=icon.ico
 InfoBeforeFile=INFO.rtf
-LicenseFile=LICENSE
+LicenseFile=LICENSE_page
 
 DisableWelcomePage=no
