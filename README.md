@@ -1,4 +1,4 @@
-![preview](https://user-images.githubusercontent.com/39247311/68624031-2c3e1500-04d6-11ea-8856-513ffa207576.PNG)
+![preview](https://user-images.githubusercontent.com/39247311/97201361-a84a6f00-17b2-11eb-8ddf-7328d24ad05c.png)
 # HF Patch for AI-Syoujyo / AI-Shoujo / AI-Girl!
 A patch for [AI-Shoujo](http://www.illusion.jp/preview/aisyoujyo/index.php) with all free updates, fan-made English translations and essential mods. It will allow you to load all character cards and scenes and give you countless gameplay improvements while still keeping the original, uncluttered and clean feel of the game.
 
