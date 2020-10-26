@@ -6,7 +6,7 @@
 ;--------------------------------------------Full game name for naming patch itself and desktop icons
 #define NAME "AI-Shoujo"
 ;----------------------------------------------------------------------------Current HF Patch version
-#define VERSION "2.2"
+#define VERSION "2.3"
 ;----------------------------------------------------------------------------------------------------
 #include "_Common\Header.iss"
 

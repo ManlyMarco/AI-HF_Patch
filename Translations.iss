@@ -91,7 +91,7 @@ jp.CompFIX=重要な修正
 jp.CompMISC=他の
 
 
-MsgPathTooLong=Your game is in a very deep folder, which can cause serious issues or even prevent the game from starting.%n%nPlease move your game folder to a simpler path like for example "C:\Games\Koikatsu" and try to run this patch again.
+MsgPathTooLong=Your game is in a very deep folder, which can cause serious issues or even prevent the game from starting.%n%nPlease move your game folder to a simpler path like for example "C:\Games\AIShoujo" and try to run this patch again.
 jp.MsgPathTooLong=ゲームは非常に深くネストされたフォルダーにあります。これにより、深刻な問題が発生したり、ゲームが開始できなくなったりする可能性があります。%n%nゲームフォルダを、たとえば「C：\Games\Koikatsu」のような単純なパスに移動して、このパッチをもう一度実行してみてください。
 
 MsgSteamUpdatesMissing=Your game is missing official updates from Steam. Please go to your Steam Library and update AI-Shoujo before installing this patch.
