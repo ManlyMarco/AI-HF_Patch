@@ -21,9 +21,7 @@ Check the [Releases](https://github.com/ManlyMarco/AI-HF_Patch/releases) page fo
 You can see a list of all included plugins and links to their websites and authors [here](https://github.com/ManlyMarco/AI-HF_Patch/blob/master/Plugin%20Readme.md). You can see what content mods are included after installing the patch by running KKManager (installed to the game directory) and navigating to the zipmods tab.
 
 ## Discussion and help
-If you need any help, visit the Koikatsu Discord server and check out the #faqs channel. If you didn't find what you need, feel free to ask in the #help channel or in comments under this post, we'll be happy to help!
-- [AI-Girl Wiki (Gameplay and technical help)](https://wiki.anime-sharing.com/hgames/index.php?title=AI_Syoujyo)
-- [Illusion Soft discord server](https://discord.gg/illusionsoft)
+If you need any help, [check the wiki](https://wiki.anime-sharing.com/hgames/index.php?title=AI_Syoujyo) or visit the [Illusion Soft discord server](https://discord.gg/illusionsoft) and ask in the #ai-help channel. Asking in the #ai-help channel instead of other places is the fastest way to get help, you can even search it for your issue to see if someone already answered it. There are also chat and card sharing channels on the server!
 
 ## Important notes, please read
 - HF Patch does not contain the full game, paid expansions or any other pirated content. The full game needs to be already installed for the patch to work.
