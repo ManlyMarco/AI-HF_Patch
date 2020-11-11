@@ -46,7 +46,7 @@ Name: "custom";   Description: "{cm:customInstall}"; Flags: iscustom
 #define CurrentDate GetDateTimeString('yyyy-mm-dd', '-', ':');
 
 [Components]
-Name: "Patch";                                 Description: "All free updates up to 2020-07-03 + game repair"                                      ; Types: full_en full extra_en extra custom bare none; Flags: fixed
+Name: "Patch";                                 Description: "All free updates up to 2020-10-30 + game repair"                                      ; Types: full_en full extra_en extra custom bare none; Flags: fixed
 Name: "BepInEx";                               Description: "BepInEx v5.3 Plugin framework + MessageCenter v1.1.1 + ConfigurationManager v16.1"    ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "BepInEx\Dev";                           Description: "{cm:CompDev}"                                                                         
 Name: "KKManager";                             Description: "KKManager v0.14.3 (Manage and update mods)"                                           ; Types: full_en full extra extra_en custom bare; Flags: fixed
@@ -68,11 +68,12 @@ Source: "Plugin Readme.md";                                 DestDir: "{app}"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_Patch\empty_ud\*";                          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: Patch
 Source: "Input\_Patch\empty_ud_eng\*";                      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Languages: en
-Source: "Input\_Patch\2020-08-14-all_common\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: Patch
-Source: "Input\_Patch\2020-08-14-all_jp\*";                 DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: Patch; Check: not IsSteam
-Source: "Input\_Patch\2020-08-14-all_steam\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: Patch; Check: IsSteam
-Source: "Input\_Patch\steam_StudioCompat\*";                DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: Patch; Check: IsSteam
-Source: "Input\_Patch\0501-steam_ect\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: Patch; Check: IsSteam
+Source: "Input\_Patch\2020-08-14-all_common\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch
+Source: "Input\_Patch\2020-08-14-all_jp\*";                 DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: not IsSteam
+Source: "Input\_Patch\2020-10-30-dx_sub\*";                 DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: not IsSteam and DxInstalled
+Source: "Input\_Patch\2020-08-14-all_steam\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: IsSteam
+Source: "Input\_Patch\steam_StudioCompat\*";                DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: IsSteam
+Source: "Input\_Patch\0501-steam_ect\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: IsSteam
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "E:\Games\HoneySelect2\mods\Sideloader Modpack\*";  DestDir: "{app}\mods\Sideloader Modpack"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\General
 Source: "D:\Games\AI-Shoujo_jp\mods\Sideloader Modpack - Exclusive AIS\*"; DestDir: "{app}\mods\Sideloader Modpack - Exclusive AIS"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\General
@@ -92,13 +93,13 @@ Source: "Input\_Plugins\AI_UncensorSelector Base.zipmod";   DestDir: "{app}\mods
 Source: "Input\_Plugins\_out\IllusionFixes_AIGirl\BepInEx\patchers\*"; DestDir: "{app}\BepInEx\patchers"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch
 Source: "Input\_Misc\save.ila";                             DestDir: "{app}\UserData\save\"; Flags: ignoreversion recursesubdirs; Components: MISC\FullSave
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Source: "Input\_TL\AI-Girl-Translations-master\*";          DestDir: "{app}\BepInEx"; Flags: ignoreversion recursesubdirs; Components: TL\AutoTranslator\EnglishTranslation; Check: not IsSteam
-Source: "Input\_TL\AI-Girl-Translations-master_steam\*";    DestDir: "{app}\BepInEx"; Flags: ignoreversion recursesubdirs; Components: TL\AutoTranslator\EnglishTranslation; Check: IsSteam
+Source: "Input\_TL\AI-Girl-Translations-master\*";          DestDir: "{app}\BepInEx"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: TL\AutoTranslator\EnglishTranslation; Check: not IsSteam
+Source: "Input\_TL\AI-Girl-Translations-master_steam\*";    DestDir: "{app}\BepInEx"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: TL\AutoTranslator\EnglishTranslation; Check: IsSteam
 Source: "Input\_TL\_lang jp\*";                             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Languages: jp
 Source: "Input\_TL\_lang ch\*";                             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Languages: sc
 Source: "Input\_TL\_lang eng\*";                            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Languages: en
-Source: "Input\Launcher_jp\*";                              DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: Launcher; Check: not IsSteam
-Source: "Input\Launcher_steam\*";                           DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: Launcher; Check: IsSteam
+Source: "Input\Launcher_jp\*";                              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Launcher; Check: not IsSteam
+Source: "Input\Launcher_steam\*";                           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Launcher; Check: IsSteam
 
 #include "components.iss"
 
@@ -164,6 +165,10 @@ Type: files; Name: "{app}\doorstop_config.ini"; Components: BepInEx
 ; Potentially incompatible, outdated or buggy plugins
 Type: files; Name: "{app}\BepInEx\plugins\Heelz.dll"; Check: IsSteam
 Type: files; Name: "{app}\BepInEx\plugins\PushUpAI.dll"; Check: IsSteam
+
+; Remove unnecessary files from someone patching the steam version manually with jp patches
+Type: files; Name: "{app}\AI-Syoujyo.exe"; Check: IsSteam
+Type: filesandordirs; Name: "{app}\AI-Syoujyo_Data"; Check: IsSteam
 
 ; Prevent both disabled and enabled dlls existing at the same time, they will get restored later
 Type: files; Name: "{app}\BepInEx\plugins\DHH_AI4.dll"
@@ -240,7 +245,12 @@ external 'RemoveModsExceptModpacks@files:HelperLib.dll stdcall';
 
 function IsSteam(): Boolean;
 begin
-  Result := FileExists(ExpandConstant('{app}\AI-Shoujo.exe'));
+  Result := FileExists(ExpandConstant('{app}\AI-Shoujo_Data\level0'));
+end;
+
+function DxInstalled(): Boolean;
+begin
+  Result := FileExists(ExpandConstant('{app}\abdata\add54'));
 end;
 
 function DirectXRedistNeedsInstall(): Boolean;
@@ -323,6 +333,14 @@ begin
       if FileExists(ExpandConstant('{app}\manifest.xml')) then
       begin
         SuppressibleMsgBox(ExpandConstant('{cm:MsgExtractedZipmod}'), mbError, MB_OK, 0);
+      end;
+      
+      if IsSteam and DxInstalled then begin
+        SuppressibleMsgBox('It looks like you have a Steam version of the game and applied the DX patch, which is meant for the Japanese version of the game. This might cause some problems because of important files being replaced by wrong versions.'#13#10'To avoid issues, before installing this patch please go to your Steam library, find AI-Shoujo, then right click it and go to Properties > Local Files > Verify integrity of game files.'#13#10'If you already verified game files, you can ignore this message. If verifying does not help resolve your issues, you might need to completely remove game files (except for the UserData folder which contains your saves) and verify files again to redownload a clean copy.', mbWarning, MB_OK, 0);
+      //end
+      //else if not IsSteam and not DxInstalled then begin
+      // not actually important, don't show
+      //  SuppressibleMsgBox('You are missing the DX patch (included in DX expansion for HS2). It adds some new clothes and items', mbInformation, MB_OK, 0);
       end;
     end;
   end;

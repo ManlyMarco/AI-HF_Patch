@@ -204,6 +204,7 @@ icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
                     "Sideloader Modpack - Exclusive AIS",
                     "Sideloader Modpack - Exclusive HS2",
                     "Sideloader Modpack - Maps",
+                    "Sideloader Modpack - Maps (HS2 Game)",
                     "Sideloader Modpack - MaterialEditor Shaders",
                     "Sideloader Modpack - Studio",
                     "Sideloader Modpack - Uncensor Selector",
