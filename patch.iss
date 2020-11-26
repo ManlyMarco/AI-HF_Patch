@@ -250,7 +250,7 @@ end;
 
 function DxInstalled(): Boolean;
 begin
-  Result := FileExists(ExpandConstant('{app}\abdata\add54'));
+  Result := FileExists(ExpandConstant('{app}\abdata\add50')) or FileExists(ExpandConstant('{app}\abdata\add54'));
 end;
 
 function DirectXRedistNeedsInstall(): Boolean;
@@ -392,6 +392,12 @@ begin
     //Exec('takeown', ExpandConstant('/f "{app}" /r /SKIPSL /d y'), ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
     //Exec('icacls', ExpandConstant('"{app}" /grant everyone:F /t /c /l'), ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
     FixPermissions(ExpandConstant('{app}'));
+    
+    //try
+    //  ExecAsOriginalUser('explorer.exe', '', '', 0, ewNoWait, ResultCode);
+    //except
+    //  ShowExceptionMessage();
+    //end;
   except
     ShowExceptionMessage();
   end;
