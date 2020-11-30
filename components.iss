@@ -1,7 +1,7 @@
 [Components]
 Name: "API";                                   Description: "APIs (Plugins required by other plugins and mods to function)"                        ; Types: full_en full extra extra_en custom bare; Flags: fixed
-Name: "API\BepisPlugins";                      Description: "BepisPlugins v16.0 (Essential plugins required by many other plugins to function)"    ; Types: full_en full extra extra_en custom bare; Flags: fixed
-Name: "API\AIAPI";                             Description: "Modding API v1.13.3 (Modding API needed by many plugins)"                             ; Types: full_en full extra extra_en custom bare; Flags: fixed
+Name: "API\BepisPlugins";                      Description: "BepisPlugins v16.0.1 (Essential plugins required by many other plugins to function)"  ; Types: full_en full extra extra_en custom bare; Flags: fixed
+Name: "API\AIAPI";                             Description: "Modding API v1.13.4 (Modding API needed by many plugins)"                             ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "API\XUnityResourceRedirector";          Description: "XUnity Resource Redirector v1.1.3 (Modding API for overriding resources)"             ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "API\BonesFramework";                    Description: "BonesFramework v1.4.1 (Lets mods add new bones)"                                      ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "API\Hooah";                             Description: "Hooah v1.0.0 (Collection of randum stuff needed by some of hooah's mods)"             ; Types: full_en full extra extra_en custom bare; Flags: fixed
@@ -13,25 +13,25 @@ Name: "TL";                                    Description: "{cm:CompTL}"       
 Name: "TL\AutoTranslator";                     Description: "XUnity Auto Translator v4.13.0 (Translation loader)"                                  ; Types: full extra full_en extra_en custom
 Name: "TL\AutoTranslator\EnglishTranslation";  Description: "Fan Translations up to {#CurrentDate}"                                                ; Types: full_en extra_en
 Name: "TL\AutoTranslator\TranslationHelper";   Description: "Translation Helper v1.0 (Extension for AT, needed for some translations)"             ; Types: full_en full extra extra_en
-Name: "TL\TextResourceRedirector";             Description: "Text Resource Redirector v1.4.2.1 (Used to apply some translations)"                  ; Types: full_en extra_en
-Name: "TL\Subtitles";                          Description: "Subtitles v2.0.1 (Warning: Machine translated, bad quality)"                          ; Types: full_en extra_en
+Name: "TL\TextResourceRedirector";             Description: "Text Resource Redirector v1.4.3.1 (Used to apply some translations)"                  ; Types: full_en extra_en
+Name: "TL\Subtitles";                          Description: "Subtitles v2.1 (Warning: Machine translated, bad quality)"                            ; Types: full_en extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "UNC";                                   Description: "{cm:CompUNC}"                                                                         ; Types: full_en full extra extra_en
-Name: "UNC\Selector";                          Description: "Uncensor Selector v3.10 (Support for user-selectable uncensors)"                      ; Types: full_en full extra extra_en
+Name: "UNC\Selector";                          Description: "Uncensor Selector v3.11.1 (Support for user-selectable uncensors)"                    ; Types: full_en full extra extra_en
 Name: "UNC\Selector\Beaver";                   Description: "Beaver plugin v1.2.2 (Allows changing some uncensor-specific settings in maker)"      ; Types: full_en full extra extra_en
-Name: "UNC\Selector\BetterPenetration";        Description: "BetterPenetration v2.2.1.0 (Improves how penetration looks in H scenes)"              ; Types: full_en full extra extra_en
+Name: "UNC\Selector\BetterPenetration";        Description: "BetterPenetration v2.4.0.0 (Improves how penetration looks in H scenes)"              ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "Content";                               Description: "Additional content for character and scene creation (Needed to properly load most character cards and scenes)"; Types: full_en full extra extra_en
-Name: "Content\MaterialEditor";                Description: "Material Editor v2.1.5 (Material editing in maker and studio)"                        ; Types: full_en full extra extra_en
+Name: "Content\MaterialEditor";                Description: "Material Editor v2.4 (Material editing in maker and studio)"                          ; Types: full_en full extra extra_en
 Name: "Content\RendererEditor";                Description: "RendererEditor v1.6.0 (Edit materials of items in Studio)"                            ; Types: full_en full extra extra_en
 Name: "Content\MoreAccessories";               Description: "MoreAccessories v1.2.2 (Unlocks accessory limit above 20)"                            ; Types: full_en full extra extra_en
-Name: "Content\KKABMX";                        Description: "AIABMX (BonemodX) v4.3.3 (More sliders in character maker)"                           ; Types: full_en full extra extra_en
+Name: "Content\KKABMX";                        Description: "AIABMX (BonemodX) v4.4 (More sliders in character maker)"                             ; Types: full_en full extra extra_en
 Name: "Content\KSOX";                          Description: "Overlay Mods v5.2.1 (Set custom body, clothes and eye textures)"                      ; Types: full_en full extra extra_en
-Name: "Content\InvisibleBody";                 Description: "Invisible Body v1.3.2 (Hide character body in studio for trickery with clothes)"      ; Types: full_en full extra extra_en
+Name: "Content\InvisibleBody";                 Description: "Invisible Body v1.4 (Hide character body in studio for trickery with clothes)"        ; Types: full_en full extra extra_en
 Name: "Content\NodesConstraints";              Description: "NodesConstraints v1.2.1 (Connect studio items to create custom animations)"           ; Types: full_en full extra extra_en
 Name: "Content\ClothColliders";                Description: "AI_ClothColliders v1.0.1 (Cloth physics support for mods)"                            ; Types: full_en full extra extra_en
-Name: "Content\Colliders";                     Description: "AI_Colliders v1.1.1 (Cloth physics support for mods)"                                 ; Types: full_en full extra extra_en
-Name: "Content\StudioSceneSettings";           Description: "StudioSceneSettings v1.2.1 (Add clip plane settings to studio scene effects)"         ; Types: full_en full extra extra_en
+Name: "Content\Colliders";                     Description: "AI_Colliders v1.2 (Cloth physics support for mods)"                                   ; Types: full_en full extra extra_en
+Name: "Content\StudioSceneSettings";           Description: "StudioSceneSettings v1.3 (Add clip plane settings to studio scene effects)"           ; Types: full_en full extra extra_en
 Name: "Content\StudioImageEmbed";              Description: "StudioImageEmbed v1.0 (Save custom images into scenes so other people can load them)" ; Types: full_en full extra extra_en
 Name: "Content\StudioCustomMasking";           Description: "Studio Custom Masking v1.0 (Can make studio items disappear when blocking the camera view)"; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -41,12 +41,12 @@ Name: "FIX\InputHotkeyBlock";                  Description: "Input Hotkey Block 
 Name: "FIX\UnlockPlayerHeight";                Description: "UnlockPlayerHeight v1.4.3 (Allows non-default heights of male characters)"            ; Types: full_en full extra extra_en
 Name: "FIX\UnlockPlayerHClothes";              Description: "UnlockPlayerHClothes v1.4.3 (Fixes inability to change clothes in h scenes)"          ; Types: full_en full extra extra_en
 Name: "FIX\BetterHScenes";                     Description: "AI_BetterHScenes v2.5.1 (Fixes H performance bugs and adds extra features)"           ; Types: full_en full extra extra_en
-Name: "FIX\ExtraGirls";                        Description: "AI_ExtraGirls v1.0.3 (Increases max amount of girls in free roam)"                    ; Types: full_en full extra extra_en
+Name: "FIX\ExtraGirls";                        Description: "AI_ExtraGirls v1.0.4 (Increases max amount of girls in free roam)"                    ; Types: full_en full extra extra_en
 Name: "FIX\HLightControl";                     Description: "HLightControl v1.2.3 (Allows you to change some light settings)"                      ; Types: full_en full extra extra_en
 Name: "FIX\LightprobesReset";                  Description: "LightprobesReset v1.1.0 (Fixes neck seam and other light related issues in Studio)"   ; Types: full_en full extra extra_en
 Name: "FIX\LookUnlocker";                      Description: "Look Speed Unlocker v1.0.0 (Fixes sluggish mouse cursor)"                             ; Types: full_en full extra extra_en
 Name: "FIX\MaleJuice";                         Description: "Male Juice v1.2.2 (Fixes male juice textures not being shown on males)"               ; Types: full_en full extra extra_en
-Name: "FIX\AdvIKPlugin";                       Description: "AdvIKPlugin v1.2.0 (More realistic shoulder deforming)"                               ; Types: full_en full extra extra_en
+Name: "FIX\AdvIKPlugin";                       Description: "AdvIKPlugin v1.3.0 (More realistic shoulder deforming)"                               ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "Feature";                               Description: "Improvements and additional features"                                                 ; Types: extra extra_en
 Name: "Feature\Graphics";                      Description: "Additional graphics settings (has to be enabled in launcher first)"                   ; Types: full_en full extra extra_en
@@ -54,7 +54,8 @@ Name: "Feature\Graphics\DHH";                  Description: "DHH Graphics Enhanc
 Name: "Feature\Graphics\AIGraphics";           Description: "AIGraphics v0.3.3 (More powerful than DHH but harder to use)"                         ; Types: full_en full extra extra_en
 Name: "Feature\Graphics\GraphicsSettings";     Description: "Graphics Settings v1.2.0 (More settings to make graphics more or less demanding)"     ; Types: full_en full extra extra_en
 Name: "Feature\Graphics\BetterAA";             Description: "Better Anti-Aliasing v1.6 (Improves anti-aliasing without any performance hit)"       ; Types: full_en full extra extra_en
-Name: "Feature\DragAndDrop";                   Description: "Drag & Drop v1.2.2 (Drag cards and scenes into maker/studio)"                         ; Types: full_en full extra extra_en
+Name: "Feature\Graphics\AIEnvironmentalLighting"; Description: "Environmental Lighting v1.0.0.0 (It makes night and evening lighting better, right)"  ; Types: extra extra_en
+Name: "Feature\DragAndDrop";                   Description: "Drag & Drop v1.2.3 (Drag cards and scenes into maker/studio)"                         ; Types: full_en full extra extra_en
 Name: "Feature\PoseFolders";                   Description: "Pose Folders v1.0 (Folder support in studio pose list)"                               ; Types: full_en full extra extra_en
 Name: "Feature\AIUS";                          Description: "AIUS v1.9.0 (Convenient UI improvements)"                                             ; Types: full_en full extra extra_en
 Name: "Feature\AIPE";                          Description: "AIPE v2.12.0 (Additional studio object manipulation)"                                 ; Types: full_en full extra extra_en
@@ -66,7 +67,7 @@ Name: "Feature\MoveControllerAI";              Description: "Move Controller AI 
 Name: "Feature\PoseQuickLoad";                 Description: "Pose Quick Load v1.0 (Immediately apply pose when selected in studio, turn on in F1 menu)"; Types: full_en full extra extra_en
 Name: "Feature\FKIK";                          Description: "FK and IK v1.1.1 (Adds FK/IK mode in studio)"                                         ; Types: full_en full extra extra_en
 Name: "Feature\Bra";                           Description: "PushUp plugin v2.0.0 (Bras affect breast shape)"                                      ; Types: full_en full extra extra_en
-Name: "Feature\Heelz";                         Description: "HS2Heelz v1.13.1 (Support for high heel shoes)"                                       ; Types: full_en full extra extra_en
+Name: "Feature\Heelz";                         Description: "HS2Heelz v1.14.3 (Support for high heel shoes)"                                       ; Types: full_en full extra extra_en
 Name: "Feature\ReverseTrap";                   Description: "Reverse Trap v1.0 (Can make girls act like guys)"                                     ; Types: full_en full extra extra_en
 Name: "Feature\HeightBar";                     Description: "HeightBarX v3.3 (Adds height measure bar to maker)"                                   ; Types: full_en full extra extra_en
 Name: "Feature\ColorPanelX";                   Description: "AI_ColorPanelX v1.4.1 (Improves color picker in maker)"                               ; Types: full_en full extra extra_en
@@ -89,11 +90,12 @@ Name: "Feature\StudioCharaSort";               Description: "Studio Character So
 Name: "Feature\MuteInBackground";              Description: "Mute In Background v1.1 (Mute the game when it's not in focus, turn on in plugin settings)"; Types: full_en full extra_en extra
 Name: "Feature\EnableResize";                  Description: "Enable Resize v1.5 (Allows resizing the game window, can mess with the UI, turn on in plugin settings)"; Types: full_en full extra_en extra
 Name: "Feature\EnableFullScreenToggle";        Description: "Enable Full Screen Toggle v1.0 (Toggle full screen with alt+enter)"                   ; Types: full_en full extra extra_en
+Name: "Feature\StudioAccessoryNames";          Description: "AI_StudioAccessoryNames v1.0.0 (Shows the accessory names in studio)"                 ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
 Name: "MISC\FPS";                              Description: "FPS Counter v3.1 (Useful for performance testing)"                                    ; Types: full_en full extra extra_en
-Name: "MISC\Trainer";                          Description: "Runtime Unity Editor v2.2.1.0 (Tool for making arbitrary modifications to the game)"  ; Types: full_en full extra extra_en
-Name: "MISC\Trainer\Cheats";                   Description: "Cheat Tools v2.8 (Trainer, press F12 to open)"                                        ; Types: full_en full extra extra_en
+Name: "MISC\Trainer";                          Description: "Runtime Unity Editor v2.3.0.0 (Tool for making arbitrary modifications to the game)"  ; Types: full_en full extra extra_en
+Name: "MISC\Trainer\Cheats";                   Description: "Cheat Tools v2.8.1 (Trainer, press F12 to open)"                                      ; Types: full_en full extra extra_en
 Name: "MISC\ScriptLoader";                     Description: "C# Script Loader v1.2.4 (Runs custom user scripts)"                                   ; Types: full_en full extra extra_en
 Name: "MISC\FullSave";                         Description: "Full save (WARNING - OVERWRITES CURRENT SAVE)"                                        
 
@@ -169,6 +171,7 @@ Source: "Input\_Plugins\_out\AIGraphics\*";                 DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\AI_BetterAA\*";                DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\Graphics\BetterAA; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\DHH\*";                        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\Graphics\DHH; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\GraphicsSettings\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\Graphics\GraphicsSettings; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\AIEnvironmentalLighting\*";    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\Graphics\AIEnvironmentalLighting; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\AIMultiAngleRotation\*";       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\AIMultiAngleRotation; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\AI_PovX\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\PovX; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\AI_StudioObjectMoveHotkeys\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\StudioObjectMoveHotkeys; Excludes: "manifest.xml"
@@ -183,6 +186,7 @@ Source: "Input\_Plugins\_out\BepInEx.EnableFullScreenToggle\*"; DestDir: "{app}"
 Source: "Input\_Plugins\_out\BepInEx.EnableResize\*";       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\EnableResize; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\BepInEx.MuteInBackground\*";   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\MuteInBackground; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\StudioCharaSort\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\StudioCharaSort; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\AI_StudioAccessoryNames\*";    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\StudioAccessoryNames; Excludes: "manifest.xml"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_Plugins\_out\FPSCounter\*";                 DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\FPS; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\RuntimeUnityEditor_BepInEx5\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\Trainer; Excludes: "manifest.xml"

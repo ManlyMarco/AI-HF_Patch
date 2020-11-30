@@ -6,7 +6,7 @@
 ;--------------------------------------------Full game name for naming patch itself and desktop icons
 #define NAME "AI-Shoujo"
 ;----------------------------------------------------------------------------Current HF Patch version
-#define VERSION "2.3"
+#define VERSION "2.4"
 ;----------------------------------------------------------------------------------------------------
 #include "_Common\Header.iss"
 
@@ -23,7 +23,7 @@ LZMAUseSeparateProcess=yes
 ;LZMADictionarySize=208576
 LZMADictionarySize=208576
 LZMANumFastBytes=273
-LZMANumBlockThreads=5
+LZMANumBlockThreads=3
 DiskSpanning=yes
 DefaultDirName=C:\Illusion\AI-Syoujyo
 
@@ -47,9 +47,9 @@ Name: "custom";   Description: "{cm:customInstall}"; Flags: iscustom
 
 [Components]
 Name: "Patch";                                 Description: "All free updates up to 2020-10-30 + game repair"                                      ; Types: full_en full extra_en extra custom bare none; Flags: fixed
-Name: "BepInEx";                               Description: "BepInEx v5.3 Plugin framework + MessageCenter v1.1.1 + ConfigurationManager v16.1"    ; Types: full_en full extra extra_en custom bare; Flags: fixed
+Name: "BepInEx";                               Description: "BepInEx v5.4.3 Plugin framework + MessageCenter v1.1.1 + ConfigurationManager v16.1"    ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "BepInEx\Dev";                           Description: "{cm:CompDev}"                                                                         
-Name: "KKManager";                             Description: "KKManager v0.14.3 (Manage and update mods)"                                           ; Types: full_en full extra extra_en custom bare; Flags: fixed
+Name: "KKManager";                             Description: "KKManager v0.14.4 (Manage and update mods)"                                           ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "Modpack";                               Description: "Sideloader Modpacks {#CurrentDate} (Add additional content to the game, needs at least BepisPlugins to work)"
 Name: "Modpack\General";                       Description: "General (Content for making characters, always recommended)"                          ; Types: full_en full extra_en extra
 ; Name: "Modpack\Fixes"                        ; Description: "Fixes (Fixes to some of the official content, always recommended)"                    ; Types: full_en full extra_en extra
@@ -58,7 +58,7 @@ Name: "Modpack\General";                       Description: "General (Content fo
 ; Name: "Modpack\Maps"                         ; Description: "Maps (Additional maps for use in Studio and H scenes)"                                ; Types: full_en full extra_en extra
 Name: "Modpack\MaterialEditor";                Description: "KK_MaterialEditor (Materials for use with MaterialEditor)"                            ; Types: full_en full extra_en extra
 Name: "Modpack\UncensorSelector";              Description: "KK_UncensorSelector (Uncensors for use with UncensorSelector)"                        ; Types: full_en full extra_en extra
-Name: "Launcher";                              Description: "IllusionLaunchers v2.1.1 (Multilangual launcher)"                                     ; Types: full_en full extra extra_en custom
+Name: "Launcher";                              Description: "IllusionLaunchers v3.0.0 (Multilangual launcher)"                                     ; Types: full_en full extra extra_en custom
 
 [Files]
 Source: "HelperLib.dll";                                    DestDir: "{app}"; Flags: dontcopy
@@ -75,14 +75,14 @@ Source: "Input\_Patch\2020-08-14-all_steam\*";              DestDir: "{app}"; Fl
 Source: "Input\_Patch\steam_StudioCompat\*";                DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: IsSteam
 Source: "Input\_Patch\0501-steam_ect\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: IsSteam
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Source: "E:\Games\HoneySelect2\mods\Sideloader Modpack\*";  DestDir: "{app}\mods\Sideloader Modpack"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\General
-Source: "D:\Games\AI-Shoujo_jp\mods\Sideloader Modpack - Exclusive AIS\*"; DestDir: "{app}\mods\Sideloader Modpack - Exclusive AIS"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\General
+;Source: "E:\HFpatchmaking\AIS\JPDX\mods\Sideloader Modpack\*";  DestDir: "{app}\mods\Sideloader Modpack"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\General
+;Source: "E:\HFpatchmaking\AIS\JPDX\mods\Sideloader Modpack - Exclusive AIS\*"; DestDir: "{app}\mods\Sideloader Modpack - Exclusive AIS"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\General
 ; Source: "E:\Games\HoneySelect2\mods\Sideloader Modpack - Bleeding Edge\*"  ; DestDir: "{app}\mods\Sideloader Modpack - Bleeding Edge"  ; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\Bleeding
 ; Source: "E:\Games\HoneySelect2\mods\Sideloader Modpack - Studio\*"         ; DestDir: "{app}\mods\Sideloader Modpack - Studio"         ; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\Studio
 ; Source: "E:\Games\HoneySelect2\mods\Sideloader Modpack - Maps\*"           ; DestDir: "{app}\mods\Sideloader Modpack - Maps"           ; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\Maps
 ; Source: "E:\Games\HoneySelect2\mods\Sideloader Modpack - Maps (HS2 Game)\*"; DestDir: "{app}\mods\Sideloader Modpack - Maps (HS2 Game)"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\Maps
-Source: "E:\Games\HoneySelect2\mods\Sideloader Modpack - MaterialEditor Shaders\*"; DestDir: "{app}\mods\Sideloader Modpack - MaterialEditor Shaders"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\MaterialEditor
-Source: "E:\Games\HoneySelect2\mods\Sideloader Modpack - Uncensor Selector\*"; DestDir: "{app}\mods\Sideloader Modpack - Uncensor Selector"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\UncensorSelector
+;Source: "E:\HFpatchmaking\AIS\JPDX\mods\Sideloader Modpack - MaterialEditor Shaders\*"; DestDir: "{app}\mods\Sideloader Modpack - MaterialEditor Shaders"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\MaterialEditor
+;Source: "E:\HFpatchmaking\AIS\JPDX\mods\Sideloader Modpack - Uncensor Selector\*"; DestDir: "{app}\mods\Sideloader Modpack - Uncensor Selector"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\UncensorSelector
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\BepInEx_x64\*";                              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: BepInEx
 Source: "Input\BepInEx_Essentials\*";                       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: BepInEx
@@ -336,7 +336,7 @@ begin
       end;
       
       if IsSteam and DxInstalled then begin
-        SuppressibleMsgBox('It looks like you have a Steam version of the game and applied the DX patch, which is meant for the Japanese version of the game. This might cause some problems because of important files being replaced by wrong versions.'#13#10'To avoid issues, before installing this patch please go to your Steam library, find AI-Shoujo, then right click it and go to Properties > Local Files > Verify integrity of game files.'#13#10'If you already verified game files, you can ignore this message. If verifying does not help resolve your issues, you might need to completely remove game files (except for the UserData folder which contains your saves) and verify files again to redownload a clean copy.', mbWarning, MB_OK, 0);
+        SuppressibleMsgBox('It looks like you have a Steam version of the game and applied the DX patch, which is meant for the Japanese version of the game. This might cause some problems because of important files being replaced by wrong versions.'#13#10'To avoid issues, before installing this patch please go to your Steam library, find AI-Shoujo, then right click it and go to Properties > Local Files > Verify integrity of game files.'#13#10'If you already verified game files, you can ignore this message. If verifying does not help resolve your issues, you might need to completely remove game files (except for the UserData folder which contains your saves) and verify files again to redownload a clean copy.', mbInformation, MB_OK, 0);
       //end
       //else if not IsSteam and not DxInstalled then begin
       // not actually important, don't show
