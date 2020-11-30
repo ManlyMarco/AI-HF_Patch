@@ -98,8 +98,8 @@ Source: "Input\_TL\AI-Girl-Translations-master_steam\*";    DestDir: "{app}\BepI
 Source: "Input\_TL\_lang jp\*";                             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Languages: jp
 Source: "Input\_TL\_lang ch\*";                             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Languages: sc
 Source: "Input\_TL\_lang eng\*";                            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Languages: en
-Source: "Input\Launcher_jp\*";                              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Launcher; Check: not IsSteam
-Source: "Input\Launcher_steam\*";                           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Launcher; Check: IsSteam
+Source: "Input\Launcher_jp\*";                              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Launcher; Check: not IsSteam and not IsConvertedSteam
+Source: "Input\Launcher_steam\*";                           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Launcher; Check: IsSteam or IsConvertedSteam
 
 #include "components.iss"
 
@@ -246,6 +246,11 @@ external 'RemoveModsExceptModpacks@files:HelperLib.dll stdcall';
 function IsSteam(): Boolean;
 begin
   Result := FileExists(ExpandConstant('{app}\AI-Shoujo_Data\level0'));
+end;
+
+function IsConvertedSteam(): Boolean;
+begin
+  Result := FileExists(ExpandConstant('{app}\abdata\BRConvert\OK.txt'));
 end;
 
 function DxInstalled(): Boolean;
