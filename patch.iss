@@ -75,14 +75,14 @@ Source: "Input\_Patch\2020-08-14-all_steam\*";              DestDir: "{app}"; Fl
 Source: "Input\_Patch\steam_StudioCompat\*";                DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: IsSteam
 Source: "Input\_Patch\0501-steam_ect\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: IsSteam
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-;Source: "E:\HFpatchmaking\AIS\JPDX\mods\Sideloader Modpack\*";  DestDir: "{app}\mods\Sideloader Modpack"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\General
-;Source: "E:\HFpatchmaking\AIS\JPDX\mods\Sideloader Modpack - Exclusive AIS\*"; DestDir: "{app}\mods\Sideloader Modpack - Exclusive AIS"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\General
+Source: "E:\HFpatchmaking\AIS\JPDX\mods\Sideloader Modpack\*";  DestDir: "{app}\mods\Sideloader Modpack"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\General
+Source: "E:\HFpatchmaking\AIS\JPDX\mods\Sideloader Modpack - Exclusive AIS\*"; DestDir: "{app}\mods\Sideloader Modpack - Exclusive AIS"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\General
 ; Source: "E:\Games\HoneySelect2\mods\Sideloader Modpack - Bleeding Edge\*"  ; DestDir: "{app}\mods\Sideloader Modpack - Bleeding Edge"  ; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\Bleeding
 ; Source: "E:\Games\HoneySelect2\mods\Sideloader Modpack - Studio\*"         ; DestDir: "{app}\mods\Sideloader Modpack - Studio"         ; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\Studio
 ; Source: "E:\Games\HoneySelect2\mods\Sideloader Modpack - Maps\*"           ; DestDir: "{app}\mods\Sideloader Modpack - Maps"           ; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\Maps
 ; Source: "E:\Games\HoneySelect2\mods\Sideloader Modpack - Maps (HS2 Game)\*"; DestDir: "{app}\mods\Sideloader Modpack - Maps (HS2 Game)"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\Maps
-;Source: "E:\HFpatchmaking\AIS\JPDX\mods\Sideloader Modpack - MaterialEditor Shaders\*"; DestDir: "{app}\mods\Sideloader Modpack - MaterialEditor Shaders"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\MaterialEditor
-;Source: "E:\HFpatchmaking\AIS\JPDX\mods\Sideloader Modpack - Uncensor Selector\*"; DestDir: "{app}\mods\Sideloader Modpack - Uncensor Selector"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\UncensorSelector
+Source: "E:\HFpatchmaking\AIS\JPDX\mods\Sideloader Modpack - MaterialEditor Shaders\*"; DestDir: "{app}\mods\Sideloader Modpack - MaterialEditor Shaders"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\MaterialEditor
+Source: "E:\HFpatchmaking\AIS\JPDX\mods\Sideloader Modpack - Uncensor Selector\*"; DestDir: "{app}\mods\Sideloader Modpack - Uncensor Selector"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\UncensorSelector
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\BepInEx_x64\*";                              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: BepInEx
 Source: "Input\BepInEx_Essentials\*";                       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: BepInEx

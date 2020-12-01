@@ -3,7 +3,9 @@
 - AI_StudioAccessoryNames v1.0.0 (Shows the accessory names in studio)
 
 ## Mods updated
-- BepisPlugins v16 -> v16.0.1 (Essential plugins required by many other plugins to function)
+- Sideloader Up to date untill 2020.11.29.
+- Launchers updated to v3.0.0.0
+- BepInEx updated to v5.3.2
 - Modding API v1.13.3 -> v1.13.4 (Modding API needed by many plugins)
 - Text Resource Redirector v1.4.2.1 -> v1.4.3.1 (Used to apply some translations)
 - Subtitles v2.0.1 -> v2.1 (Warning: Machine translated, bad quality)
@@ -18,6 +20,7 @@
 - AdvIKPlugin v1.2 -> v1.3.0 (More realistic shoulder deforming)
 - Drag & Drop v1.2.2 -> v1.2.3 (Drag cards and scenes into maker/studio)
 - HS2Heelz v1.13.1 -> v1.14.3 (Support for high heel shoes)
+- Title shortcuts v1.2.1.180 -> v1.2.2.220 (Adds hotkeys to main menu; Can auto load chara maker on start)
 - Runtime Unity Editor v2.2.1 -> v2.3.0.0 (Tool for making arbitrary modifications to the game)
 - Cheat Tools v2.8 -> v2.8.1 (Trainer, press F12 to open)
 
@@ -25,6 +28,7 @@
 None!
 
 -------- Same:
+- BepisPlugins v16.0 (Essential plugins required by many other plugins to function)
 - XUnity Resource Redirector v1.1.3 (Modding API for overriding resources)
 - BonesFramework v1.4.1 (Lets mods add new bones)
 - Hooah v1.0.0 (Collection of randum stuff needed by some of hooah's mods)
@@ -73,7 +77,6 @@ None!
 - Animation Overdrive v1.1 (Unlock animation speed in studio, type in the text box)
 - HideAllUI v2.2.0 (Press space to hide interface)
 - Gravure plugin v1.4.1 (More posing options in character maker)
-- Title shortcuts v1.2.1.180 (Adds hotkeys to main menu; Can auto load chara maker on start)
 - AIMultiAngleRotation v0.1.0 (Adds more hotkeys to studio, check them in plugin settings)
 - OrthographicCamera v1.1.1 (Can switch to an orthographic camera in studio and game)
 - MakerSearch v1.4.0 (Adds search boxes in character maker item lists)

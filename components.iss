@@ -1,6 +1,6 @@
 [Components]
 Name: "API";                                   Description: "APIs (Plugins required by other plugins and mods to function)"                        ; Types: full_en full extra extra_en custom bare; Flags: fixed
-Name: "API\BepisPlugins";                      Description: "BepisPlugins v16.0.1 (Essential plugins required by many other plugins to function)"  ; Types: full_en full extra extra_en custom bare; Flags: fixed
+Name: "API\BepisPlugins";                      Description: "BepisPlugins v16.0 (Essential plugins required by many other plugins to function)"    ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "API\AIAPI";                             Description: "Modding API v1.13.4 (Modding API needed by many plugins)"                             ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "API\XUnityResourceRedirector";          Description: "XUnity Resource Redirector v1.1.3 (Modding API for overriding resources)"             ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "API\BonesFramework";                    Description: "BonesFramework v1.4.1 (Lets mods add new bones)"                                      ; Types: full_en full extra extra_en custom bare; Flags: fixed
@@ -76,7 +76,7 @@ Name: "Feature\CharacterReplacer";             Description: "Character Replacer 
 Name: "Feature\ANIMATIONOVERDRIVE";            Description: "Animation Overdrive v1.1 (Unlock animation speed in studio, type in the text box)"    ; Types: full_en full extra extra_en
 Name: "Feature\HideAllUI";                     Description: "HideAllUI v2.2.0 (Press space to hide interface)"                                     ; Types: full_en full extra extra_en
 Name: "Feature\GravureAI";                     Description: "Gravure plugin v1.4.1 (More posing options in character maker)"                       ; Types: full_en full extra extra_en
-Name: "Feature\TitleShortcuts";                Description: "Title shortcuts v1.2.1.180 (Adds hotkeys to main menu; Can auto load chara maker on start)"; Types: full_en full extra extra_en
+Name: "Feature\TitleShortcuts";                Description: "Title shortcuts v1.2.2.220 (Adds hotkeys to main menu; Can auto load chara maker on start)"; Types: full_en full extra extra_en
 Name: "Feature\AIMultiAngleRotation";          Description: "AIMultiAngleRotation v0.1.0 (Adds more hotkeys to studio, check them in plugin settings)"; Types: full_en full extra extra_en
 Name: "Feature\OrthographicCamera";            Description: "OrthographicCamera v1.1.1 (Can switch to an orthographic camera in studio and game)"  ; Types: full_en full extra extra_en
 Name: "Feature\MakerSearch";                   Description: "MakerSearch v1.4.0 (Adds search boxes in character maker item lists)"                 ; Types: full_en full extra extra_en
