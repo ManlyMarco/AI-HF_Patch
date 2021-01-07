@@ -6,7 +6,7 @@
 ;--------------------------------------------Full game name for naming patch itself and desktop icons
 #define NAME "AI-Shoujo"
 ;----------------------------------------------------------------------------Current HF Patch version
-#define VERSION "2.4"
+#define VERSION "2.5"
 ;----------------------------------------------------------------------------------------------------
 #include "_Common\Header.iss"
 
@@ -47,9 +47,9 @@ Name: "custom";   Description: "{cm:customInstall}"; Flags: iscustom
 
 [Components]
 Name: "Patch";                                 Description: "All free updates up to 2020-10-30 + game repair"                                      ; Types: full_en full extra_en extra custom bare none; Flags: fixed
-Name: "BepInEx";                               Description: "BepInEx v5.4.3 Plugin framework + MessageCenter v1.1.1 + ConfigurationManager v16.1"    ; Types: full_en full extra extra_en custom bare; Flags: fixed
+Name: "BepInEx";                               Description: "BepInEx v5.4.5 Plugin framework + MessageCenter v1.1.1 + ConfigurationManager v16.1"    ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "BepInEx\Dev";                           Description: "{cm:CompDev}"                                                                         
-Name: "KKManager";                             Description: "KKManager v0.14.4 (Manage and update mods)"                                           ; Types: full_en full extra extra_en custom bare; Flags: fixed
+Name: "KKManager";                             Description: "KKManager v0.16.0 (Manage and update mods)"                                           ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "Modpack";                               Description: "Sideloader Modpacks {#CurrentDate} (Add additional content to the game, needs at least BepisPlugins to work)"
 Name: "Modpack\General";                       Description: "General (Content for making characters, always recommended)"                          ; Types: full_en full extra_en extra
 ; Name: "Modpack\Fixes"                        ; Description: "Fixes (Fixes to some of the official content, always recommended)"                    ; Types: full_en full extra_en extra
