@@ -6,7 +6,7 @@
 ;--------------------------------------------Full game name for naming patch itself and desktop icons
 #define NAME "AI-Shoujo"
 ;----------------------------------------------------------------------------Current HF Patch version
-#define VERSION "2.5"
+#define VERSION "2.6"
 ;----------------------------------------------------------------------------------------------------
 #include "_Common\Header.iss"
 
@@ -23,7 +23,7 @@ LZMAUseSeparateProcess=yes
 ;LZMADictionarySize=208576
 LZMADictionarySize=208576
 LZMANumFastBytes=273
-LZMANumBlockThreads=3
+LZMANumBlockThreads=4
 DiskSpanning=yes
 DefaultDirName=C:\Illusion\AI-Syoujyo
 
@@ -70,7 +70,7 @@ Source: "Input\_Patch\empty_ud\*";                          DestDir: "{app}"; Fl
 Source: "Input\_Patch\empty_ud_eng\*";                      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Languages: en
 Source: "Input\_Patch\2020-08-14-all_common\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch
 Source: "Input\_Patch\2020-08-14-all_jp\*";                 DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: not IsSteam
-Source: "Input\_Patch\2020-10-30-dx_sub\*";                 DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: not IsSteam and DxInstalled
+Source: "Input\_Patch\2021-01-15-dx_sub\*";                 DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: not IsSteam and DxInstalled
 Source: "Input\_Patch\2020-08-14-all_steam\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: IsSteam
 Source: "Input\_Patch\steam_StudioCompat\*";                DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: IsSteam
 Source: "Input\_Patch\0501-steam_ect\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: IsSteam
