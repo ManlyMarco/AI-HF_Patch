@@ -6,7 +6,7 @@
 ;--------------------------------------------Full game name for naming patch itself and desktop icons
 #define NAME "AI-Shoujo"
 ;----------------------------------------------------------------------------Current HF Patch version
-#define VERSION "2.6"
+#define VERSION "2.7"
 ;----------------------------------------------------------------------------------------------------
 #include "_Common\Header.iss"
 
@@ -47,7 +47,7 @@ Name: "custom";   Description: "{cm:customInstall}"; Flags: iscustom
 
 [Components]
 Name: "Patch";                                 Description: "All free updates up to 2020-10-30 + game repair"                                      ; Types: full_en full extra_en extra custom bare none; Flags: fixed
-Name: "BepInEx";                               Description: "BepInEx v5.4.5 Plugin framework + MessageCenter v1.1.1 + ConfigurationManager v16.1"    ; Types: full_en full extra extra_en custom bare; Flags: fixed
+Name: "BepInEx";                               Description: "BepInEx v5.4.8 Plugin framework + MessageCenter v1.1.1 + ConfigurationManager v16.1"    ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "BepInEx\Dev";                           Description: "{cm:CompDev}"                                                                         
 Name: "KKManager";                             Description: "KKManager v0.16.0 (Manage and update mods)"                                           ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "Modpack";                               Description: "Sideloader Modpacks {#CurrentDate} (Add additional content to the game, needs at least BepisPlugins to work)"
@@ -58,7 +58,7 @@ Name: "Modpack\General";                       Description: "General (Content fo
 ; Name: "Modpack\Maps"                         ; Description: "Maps (Additional maps for use in Studio and H scenes)"                                ; Types: full_en full extra_en extra
 Name: "Modpack\MaterialEditor";                Description: "KK_MaterialEditor (Materials for use with MaterialEditor)"                            ; Types: full_en full extra_en extra
 Name: "Modpack\UncensorSelector";              Description: "KK_UncensorSelector (Uncensors for use with UncensorSelector)"                        ; Types: full_en full extra_en extra
-Name: "Launcher";                              Description: "IllusionLaunchers v3.0.0 (Multilangual launcher)"                                     ; Types: full_en full extra extra_en custom
+Name: "Launcher";                              Description: "IllusionLaunchers v3.0.1 (Multilangual launcher)"                                     ; Types: full_en full extra extra_en custom
 
 [Files]
 Source: "HelperLib.dll";                                    DestDir: "{app}"; Flags: dontcopy
