@@ -19,6 +19,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using KKManager.Util.ProcessWaiter;
+using Microsoft.Win32;
 using RGiesecke.DllExport;
 
 namespace HelperLib
@@ -37,6 +38,76 @@ namespace HelperLib
             {
                 Console.WriteLine(e);
             }
+        }
+
+        [DllExport("FindInstallLocation", CallingConvention = CallingConvention.StdCall)]
+        [return: MarshalAs(UnmanagedType.LPWStr)]
+        public static void FindInstallLocation([MarshalAs(UnmanagedType.LPWStr)] string path, [MarshalAs(UnmanagedType.LPWStr)] string gameName, [MarshalAs(UnmanagedType.LPWStr)] string gameNameSteam, [MarshalAs(UnmanagedType.BStr)] out string strout)
+        {
+            try
+            {
+                var subKey = Registry.CurrentUser.OpenSubKey($@"Software\illusion\{gameName}\{gameName}");
+                if (subKey != null)
+                {
+                    var regDir = subKey.GetValue("INSTALLDIR_HFP")?.ToString();
+                    if (Directory.Exists(regDir))
+                    {
+                        strout = regDir;
+                        return;
+                    }
+                    regDir = subKey.GetValue("INSTALLDIR")?.ToString();
+                    if (Directory.Exists(regDir))
+                    {
+                        strout = regDir;
+                        return;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                AppendLog(path, e);
+            }
+
+            try
+            {
+                var steamAppsLocations = new Steam().SteamAppsLocations;
+                var selectMany = steamAppsLocations.Select(x => Path.Combine(x, "common")).SelectMany(Directory.GetDirectories);
+                var steamLoc = selectMany.FirstOrDefault(x => Path.GetFileName(x).Equals(gameNameSteam, StringComparison.InvariantCultureIgnoreCase));
+                if (Directory.Exists(steamLoc))
+                {
+                    strout = steamLoc;
+                    return;
+                }
+            }
+            catch (Exception e)
+            {
+                AppendLog(path, e);
+            }
+
+            try
+            {
+                var bruteForcePath = new[]
+                    {
+                        new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles)),
+                        new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86)),
+                    }
+                    .Concat(DriveInfo.GetDrives().AttemptMany(x => x.RootDirectory.GetDirectories()))
+                    .AttemptMany(x => x.GetDirectories())
+                    .Where(y => y.Name.Contains(gameNameSteam) || y.Name.Contains(gameName))
+                    .AttemptMany(x => x.GetFiles())
+                    .FirstOrDefault(y => y.Name.Contains(gameNameSteam) || y.Name.Contains(gameName));
+                if (Directory.Exists(bruteForcePath?.FullName))
+                {
+                    strout = bruteForcePath.DirectoryName;
+                    return;
+                }
+            }
+            catch (Exception e)
+            {
+                AppendLog(path, e);
+            }
+
+            strout = "C:\\Path to the installed game";
         }
 
         [DllExport("SetConfigDefaults", CallingConvention = CallingConvention.StdCall)]

@@ -25,7 +25,7 @@ LZMADictionarySize=208576
 LZMANumFastBytes=273
 LZMANumBlockThreads=4
 DiskSpanning=yes
-DefaultDirName=C:\Illusion\AI-Syoujyo
+DefaultDirName={code:GetDefaultDirName}
 
 [Languages]
 Name: "en"; MessagesFile: "compiler:Default.isl"
@@ -182,6 +182,12 @@ Type: filesandordirs; Name: "{app}\AI-Shoujo_Data\Managed"; Components: Patch
 Type: filesandordirs; Name: "{app}\StudioNEOV2_Data\Managed"; Components: Patch
 Type: filesandordirs; Name: "{app}\MonoBleedingEdge"; Components: Patch
 
+[Registry]
+Root: HKCU; Subkey: "Software\Illusion"
+Root: HKCU; Subkey: "Software\Illusion\AI-Syoujyo"
+Root: HKCU; Subkey: "Software\Illusion\AI-Syoujyo\AI-Syoujyo"
+Root: HKCU; Subkey: "Software\Illusion\AI-Syoujyo\AI-Syoujyo"; ValueType: string; ValueName: "INSTALLDIR_HFP"; ValueData: "{app}\"
+
 [Tasks]
 Name: desktopicon; Description: "{cm:TaskIcon}"; Flags: unchecked
 Name: delete; Description: "{cm:TaskDelete}";
@@ -213,6 +219,9 @@ Filename: "https://github.com/ManlyMarco/AI-HF_Patch"; Description: "Latest rele
 Filename: "https://www.patreon.com/ManlyMarco"; Description: "ManlyMarco Patreon (Creator of this patch)"; Flags: shellexec runasoriginaluser postinstall unchecked nowait skipifsilent;
 
 [Code]
+procedure FindInstallLocation(path: String; gameName: String; gameNameSteam: String; out strout: WideString);
+external 'FindInstallLocation@files:HelperLib.dll stdcall';
+
 procedure CreateBackup(path: String);
 external 'CreateBackup@files:HelperLib.dll stdcall';
 
@@ -243,6 +252,14 @@ external 'RemoveSideloaderDuplicates@files:HelperLib.dll stdcall';
 procedure RemoveModsExceptModpacks(path: String);
 external 'RemoveModsExceptModpacks@files:HelperLib.dll stdcall';
 
+function GetDefaultDirName(Param: string): string;
+var
+  str: WideString;
+begin
+  FindInstallLocation(ExpandConstant('{src}'), 'AI-Syoujyo', 'AI-Shoujo', str);
+  Result := str;
+end;
+
 function IsSteam(): Boolean;
 begin
   Result := FileExists(ExpandConstant('{app}\AI-Shoujo_Data\level0'));
@@ -255,7 +272,7 @@ end;
 
 function DxInstalled(): Boolean;
 begin
-  Result := FileExists(ExpandConstant('{app}\abdata\add50')) or FileExists(ExpandConstant('{app}\abdata\add54'));
+  Result := FileExists(ExpandConstant('{app}\abdata\adv\scenario\c00\50\06.unity3d')) or FileExists(ExpandConstant('{app}\abdata\add50'));
 end;
 
 function DirectXRedistNeedsInstall(): Boolean;
