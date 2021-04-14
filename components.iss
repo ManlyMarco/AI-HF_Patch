@@ -1,6 +1,6 @@
 [Components]
 Name: "API";                                   Description: "APIs (Plugins required by other plugins and mods to function)"                        ; Types: full_en full extra extra_en custom bare; Flags: fixed
-Name: "API\BepisPlugins";                      Description: "BepisPlugins v16.2.1 (Essential plugins required by many other plugins to function)"  ; Types: full_en full extra extra_en custom bare; Flags: fixed
+Name: "API\BepisPlugins";                      Description: "BepisPlugins v16.3 (Essential plugins required by many other plugins to function)"    ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "API\AIAPI";                             Description: "Modding API v1.17 (Modding API needed by many plugins)"                               ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "API\XUnityResourceRedirector";          Description: "XUnity Resource Redirector v1.1.3 (Modding API for overriding resources)"             ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "API\BonesFramework";                    Description: "BonesFramework v1.4.2 (Lets mods add new bones)"                                      ; Types: full_en full extra extra_en custom bare; Flags: fixed
@@ -13,7 +13,7 @@ Name: "TL";                                    Description: "{cm:CompTL}"       
 Name: "TL\AutoTranslator";                     Description: "XUnity Auto Translator v4.14.0 (Translation loader)"                                  ; Types: full extra full_en extra_en custom
 Name: "TL\AutoTranslator\EnglishTranslation";  Description: "Fan Translations up to {#CurrentDate}"                                                ; Types: full_en extra_en
 Name: "TL\AutoTranslator\TranslationHelper";   Description: "Translation Helper v1.1.0 (Extension for AT, needed for some translations)"           ; Types: full_en full extra extra_en
-Name: "TL\TextResourceRedirector";             Description: "Text Resource Redirector v1.4.3.1 (Used to apply some translations)"                  ; Types: full_en extra_en
+Name: "TL\TextResourceRedirector";             Description: "Text Resource Redirector v1.4.4 (Used to apply some translations)"                    ; Types: full_en extra_en
 Name: "TL\Subtitles";                          Description: "Subtitles v2.2 (Warning: Machine translated, bad quality)"                            ; Types: full_en extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "UNC";                                   Description: "{cm:CompUNC}"                                                                         ; Types: full_en full extra extra_en
@@ -103,9 +103,12 @@ Name: "Feature\AIMainGameOptimizations";       Description: "AI Main Game Optimi
 Name: "Feature\StudioExtraMoveAxis";           Description: "Extra move axis in studio v1.0 (Adds extra move gizmo in bottom right corner for studio)"; Types: full_en full extra extra_en
 Name: "Feature\Autostart";                     Description: "Autostart v1.0.0 (Skip game startup screens or directly start character maker)"       ; Types: full_en full extra extra_en
 Name: "Feature\HardcoreMode";                  Description: "Hardcore Mode v2.0.2 (Add more survival aspects in AI-Syoujyo)"                       ; Types: extra extra_en
-Name: "Feature\PregnancyPlus";                 Description: "KK_PregnancyPlus v1.29 (Adds additional belly sliders in Studio and Maker)"           ; Types: full_en full extra extra_en
+Name: "Feature\PregnancyPlus";                 Description: "KK_PregnancyPlus v2.1 (Adds additional belly sliders in Studio and Maker)"            ; Types: full_en full extra extra_en
 Name: "Feature\StudioSceneNavigation";         Description: "Studio Scene Navigation v1.0.0 (Hotkeys to load the next/previous scene from scenes folder)"; Types: full_en full extra extra_en
 Name: "Feature\StudioMultiselectChara";        Description: "Studio MultiSelect Chara v1.0.0 (Shift+tab to select all instances of same chara)"    ; Types: full_en full extra extra_en
+Name: "Feature\MapControllerAI";               Description: "Map Controller plugin v1.0 (A plugin to selectively move/rotate/scale and hide specific elements)"; Types: full_en full extra extra_en
+Name: "Feature\UIScalerAndWidescreenSupport";  Description: "UIScalerAndWidescreenSupport v1.0.0 (Allows widescreen and UI scaling)"               ; Types: full_en full extra extra_en
+Name: "Feature\ClothesAssignment";             Description: "AI_ClothesAssignment v1.0.0 (Girls will look for coordinates that have their name in the closet)"; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
 Name: "MISC\FPS";                              Description: "FPS Counter v3.1 (Useful for performance testing)"                                    ; Types: full_en full extra extra_en
@@ -217,6 +220,9 @@ Source: "Input\_Plugins\_out\AI_PregnancyPlus\*";           DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\HardcoreMode\*";               DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\HardcoreMode; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\AI_StudioMultiselectChara\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\StudioMultiselectChara; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\AI_StudioSceneNavigation\*";   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\StudioSceneNavigation; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\AI_ClothesAssignment\*";       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\ClothesAssignment; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\AI_UIScalerAndWidescreenSupport\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\UIScalerAndWidescreenSupport; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\MapControllerAI\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\MapControllerAI; Excludes: "manifest.xml"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_Plugins\_out\FPSCounter\*";                 DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\FPS; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\RuntimeUnityEditor_BepInEx5\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\Trainer; Excludes: "manifest.xml"
