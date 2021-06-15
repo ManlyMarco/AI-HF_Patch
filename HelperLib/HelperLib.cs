@@ -40,6 +40,18 @@ namespace HelperLib
             }
         }
 
+        private static readonly string GoodSettings =
+            @"<?xml version=""1.0"" encoding=""utf-16""?>
+<Setting>
+  <Size>1280 x 720 (16 : 9)</Size>
+  <Width>1280</Width>
+  <Height>720</Height>
+  <Quality>2</Quality>
+  <FullScreen>false</FullScreen>
+  <Display>0</Display>
+  <Language>0</Language>
+</Setting>";
+
         [DllExport("FindInstallLocation", CallingConvention = CallingConvention.StdCall)]
         [return: MarshalAs(UnmanagedType.LPWStr)]
         public static void FindInstallLocation([MarshalAs(UnmanagedType.LPWStr)] string path, [MarshalAs(UnmanagedType.LPWStr)] string gameName, [MarshalAs(UnmanagedType.LPWStr)] string gameNameSteam, [MarshalAs(UnmanagedType.BStr)] out string strout)
@@ -122,14 +134,16 @@ namespace HelperLib
             var verPath = Path.Combine(path, @"version");
             try
             {
-                var contents = File.Exists(verPath) ? File.ReadAllText(verPath) : string.Empty;
-                var versionList = contents.Split(';').Select(x => x.Trim()).Where(x => !string.IsNullOrEmpty(x)).ToList();
-                versionList.Add("HF Patch v" + version);
+                //var contents = File.Exists(verPath) ? File.ReadAllText(verPath) : string.Empty;
+                //var versionList = contents.Split(';').Select(x => x.Trim()).Where(x => !string.IsNullOrEmpty(x)).ToList();
+                //versionList.Add("HF Patch v" + version);
+                //
+                //var existingVersions = new HashSet<string>();
+                //// Only keep latest copy of any version, remove older duplicates
+                //var filteredVersionList = versionList.AsEnumerable().Reverse().Where(x => existingVersions.Add(x)).Reverse().ToArray();
+                //var result = string.Join("; ", filteredVersionList);
 
-                var existingVersions = new HashSet<string>();
-                // Only keep latest copy of any version, remove older duplicates
-                var filteredVersionList = versionList.AsEnumerable().Reverse().Where(x => existingVersions.Add(x)).Reverse().ToArray();
-                var result = string.Join("; ", filteredVersionList);
+                var result = "HF Patch v" + version;
 
                 // Prevent crash when overwriting hidden file
                 if (File.Exists(verPath)) File.SetAttributes(verPath, FileAttributes.Normal);
@@ -172,8 +186,11 @@ namespace HelperLib
                 try
                 {
                     File.Delete(ud);
+                    File.WriteAllText(ud, GoodSettings, Encoding.Unicode);
+
                     if (!(e is FileNotFoundException))
-                        AppendLog(path, @"Reset corrupted " + ud + Environment.NewLine + e + Environment.NewLine);
+                        AppendLog(path, @"Fixed corrupted " + ud + "; Cause:" + e.Message);
+
                 }
                 catch { }
             }
@@ -271,7 +288,7 @@ icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
 
                 var acceptableDirs = new[]{
                     "Sideloader Modpack",
-                    "Sideloader Modpack - Bleeding Edge",
+                    //"Sideloader Modpack - Bleeding Edge",
                     "Sideloader Modpack - Exclusive AIS",
                     "Sideloader Modpack - Exclusive HS2",
                     "Sideloader Modpack - Maps",
