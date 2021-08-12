@@ -3,7 +3,7 @@
 - Author(s):         OrangeSpork
 - More information:  https://github.com/OrangeSpork/AdditionalAccessoryControls
 
-# AdvIKPlugin v1.6.0
+# AdvIKPlugin v1.6.3
 - Short description: More realistic shoulder deforming
 - Author(s):         OrangeSpork
 - More information:  https://github.com/OrangeSpork/AdvIKPlugin
@@ -13,12 +13,17 @@
 - Author(s):         https://www.patreon.com/Animal42069
 - More information:  https://github.com/Animal42069/AI_MainGameOptimizations
 
-# AI Studio Better Penetration v2.0.2.0
+# AI Particle Editor v1.0.0
+- Short description: Allows editing of particle items in studio
+- Author(s):         https://github.com/kkykkykky
+- More information:  https://github.com/kkykkykky
+
+# AI Studio Better Penetration v2.2.1.0
 - Short description: BetterPenetration for studio
 - Author(s):         Animal42069
 - More information:  https://www.patreon.com/Animal42069
 
-# AI_BetterHScenes v2.6.2
+# AI_BetterHScenes v2.6.5
 - Short description: Fixes H performance bugs and adds extra features
 - Author(s):         https://www.patreon.com/2155X
 - More information:  https://www.patreon.com/2155X
@@ -108,12 +113,12 @@
 - Author(s):         https://mikkemods.blogspot.com
 - More information:  https://mikkemods.blogspot.com/
 
-# BepInEx v5.4.11.0
+# BepInEx v5.4.15.0
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
 
-# BepisPlugins v16.3.1
+# BepisPlugins v16.4
 - Short description: Essential plugins required by many other plugins to function
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/BepisPlugins
@@ -123,7 +128,7 @@
 - Author(s):         A basement dweller
 - More information:  https://www.patreon.com/posts/29809884
 
-# BetterPenetration v4.0.2.0
+# BetterPenetration v4.2.0.0
 - Short description: Improves how penetration looks in H scenes
 - Author(s):         https://www.patreon.com/Animal42069
 - More information:  https://www.patreon.com/Animal42069/posts?filters%5Btag%5D=BetterPenetration
@@ -138,7 +143,7 @@
 - Author(s):         denikson
 - More information:  https://github.com/denikson/BepInEx.ScriptLoader
 
-# Camera Target Fix v15.3.1
+# Camera Target Fix v16.0
 - Short description: A collection of important fixes
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
@@ -158,7 +163,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/CharacterReplacer
 
-# Cheat Tools v2.10.1
+# Cheat Tools v2.10.2
 - Short description: Trainer, press F12 to open
 - Author(s):         https://github.com/ManlyMarco/IllusionCheatTools
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
@@ -208,6 +213,11 @@
 - Author(s):         https://www.patreon.com/Animal42069
 - More information:  https://www.patreon.com/posts/environmental-ai-43724007
 
+# Environmental Seasons v1.1.0.0
+- Short description: This plugin fixes several issues with AI Shoujo's environmental simulator
+- Author(s):         Animal42069
+- More information:  https://github.com/Animal42069/AI_EnvironmentalSeasons
+
 # Extra move axis in studio v1.0
 - Short description: Adds extra move gizmo in bottom right corner for studio
 - Author(s):         ManlyMarco
@@ -228,7 +238,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/FPSCounter
 
-# GeBo Modding API v1.1.1.3
+# GeBo Modding API v1.1.2.1
 - Short description: Modding API necessary for plugins by GeBo
 - Author(s):         GeBo
 - More information:  https://github.com/GeBo1/GeBoPlugins
@@ -303,7 +313,7 @@
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# KK_PregnancyPlus v3.16
+# KK_PregnancyPlus v4.7
 - Short description: Adds additional belly sliders in Studio and Maker
 - Author(s):         thojmr
 - More information:  https://github.com/thojmr/KK_PregnancyPlus/releases
@@ -328,7 +338,12 @@
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Maker/Studio Browser Folders v2.5.1
+# Maker Jump to Selection v1.0.0
+- Short description: Adds a button to maker to jump to the position of the selected item
+- Author(s):         OrangeSpork
+- More information:  https://github.com/OrangeSpork/MakerJumpToSelectionPlugin
+
+# Maker/Studio Browser Folders v2.5.2
 - Short description: Adds folder support to studio character and scene lists
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_BrowserFolders
@@ -368,7 +383,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.Utility
 
-# Modding API v1.20.3
+# Modding API v1.21
 - Short description: Modding API needed by many plugins
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/IllusionMods/IllusionModdingAPI
@@ -378,7 +393,7 @@
 - Author(s):         https://www.patreon.com/joan6694
 - More information:  https://www.patreon.com/joan6694
 
-# Move Controller AI v1.5.2
+# Move Controller AI v1.7.1
 - Short description: Improved object move window in studio
 - Author(s):         Mikke
 - More information:  https://mikkemods.blogspot.com/
@@ -473,7 +488,7 @@
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Studio MultiSelect Chara v1.0.0
+# Studio MultiSelect Chara v1.0.0.2
 - Short description: Shift+tab to select all instances of same chara
 - Author(s):         GeBo
 - More information:  https://gebo1.github.io/GeBoPlugins/src/StudioMultiselectChara/
@@ -488,7 +503,7 @@
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Studio Scene Navigation v1.0.0
+# Studio Scene Navigation v1.0.2.2
 - Short description: Hotkeys to load the next/previous scene from scenes folder
 - Author(s):         GeBo
 - More information:  https://gebo1.github.io/GeBoPlugins/src/StudioSceneNavigation/
@@ -513,7 +528,7 @@
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Text Resource Redirector v1.4.4
+# Text Resource Redirector v1.4.4.3
 - Short description: Used to apply some translations
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/TranslationTools
@@ -523,7 +538,7 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# Translation Helper v1.1.0.6
+# Translation Helper v1.1.0.9
 - Short description: Extension for AT, needed for some translations
 - Author(s):         GeBo
 - More information:  https://github.com/GeBo1/GeBoPlugins
