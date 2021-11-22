@@ -13,12 +13,21 @@
 ;#define ModsDir "F:\Games\KoikatsuP\mods"
 ;--Don't include any files in the build to make it go fast for testing
 ;#define DEBUG
+;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
+;#define NOVERIFY
+;------------Don't include general, studio and map sideloader modpacks
+#define LITE
 ;---------------------------------------------------------------------
 
 #include "_Common\Header.iss"
 [Setup]
+#ifndef LITE
 AppName=HF Patch for AI-Syoujyo and AI-Shoujo
 OutputBaseFilename=AI-Shoujo HF Patch v{#VERSION}
+#else
+AppName=HF Patch for AI-Syoujyo and AI-Shoujo (Light Version)
+OutputBaseFilename=AI-Shoujo HF Patch v{#VERSION} Light Version
+#endif
 ArchitecturesInstallIn64BitMode=x64
 CloseApplications=yes
 RestartApplications=no
@@ -59,13 +68,18 @@ Name: "custom";   Description: "{cm:customInstall}"; Flags: iscustom
 Name: "Patch"; Description: "All free updates + game repair"; Types: full_en full extra_en extra custom bare none; Flags: fixed
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "Modpack";                               Description: "Sideloader Modpacks {#CurrentDate} (Add additional content to the game, needs at least BepisPlugins to work)"
+#ifndef LITE
 Name: "Modpack\General";                       Description: "General (Content for making characters, always recommended)"                          ; Types: full_en full extra_en extra
-; Name: "Modpack\Fixes"                        ; Description: "Fixes (Fixes to some of the official content, always recommended)"                    ; Types: full_en full extra_en extra
 ; Name: "Modpack\Studio"                       ; Description: "Studio (Additional content for making Studio scenes)"                                 ; Types: full_en full extra_en extra
-; Name: "Modpack\Animations"                   ; Description: "Animations (Additional adnimations for use in Studio and Free H)"                     ; Types: full_en full extra_en extra
 ; Name: "Modpack\Maps"                         ; Description: "Maps (Additional maps for use in Studio and H scenes)"                                ; Types: full_en full extra_en extra
+; Name: "Modpack\Animations"                   ; Description: "Animations (Additional adnimations for use in Studio and Free H)"                     ; Types: full_en full extra_en extra
+#endif
+; Name: "Modpack\Fixes"                        ; Description: "Fixes (Fixes to some of the official content, always recommended)"                    ; Types: full_en full extra_en extra
 Name: "Modpack\MaterialEditor";                Description: "MaterialEditor (Materials for use with MaterialEditor)"                            ; Types: full_en full extra_en extra
 Name: "Modpack\UncensorSelector";              Description: "UncensorSelector (Uncensors for use with UncensorSelector)"                        ; Types: full_en full extra_en extra
+;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 [Files]
 Source: "HelperLib.dll";                                    DestDir: "{app}"; Flags: dontcopy
@@ -84,11 +98,13 @@ Source: "Input\_Patch\steam_StudioCompat\*";                DestDir: "{app}"; Fl
 Source: "Input\_Patch\0501-steam_ect\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: IsSteam
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ; Solidbreak at the start to split off the modpacks from other files in case they don't have to be installed. solidbreak splits before the files entry with it is processed
+#ifndef LITE
 Source: "{#ModsDir}\Sideloader Modpack\*";                      DestDir: "{app}\mods\Sideloader Modpack";                      Flags: ignoreversion recursesubdirs solidbreak; Components: Modpack\General;        
 Source: "{#ModsDir}\Sideloader Modpack - Exclusive AIS\*"; DestDir: "{app}\mods\Sideloader Modpack - Exclusive AIS"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\General
 ; Source: "{#ModsDir}\Sideloader Modpack - Bleeding Edge\*"  ; DestDir: "{app}\mods\Sideloader Modpack - Bleeding Edge"  ; Flags: ignoreversion recursesubdirs; Components: Modpack\Bleeding
 ; Source: "{#ModsDir}\Sideloader Modpack - Studio\*"         ; DestDir: "{app}\mods\Sideloader Modpack - Studio"         ; Flags: ignoreversion recursesubdirs; Components: Modpack\Studio
 ; Source: "{#ModsDir}\Sideloader Modpack - Maps\*"           ; DestDir: "{app}\mods\Sideloader Modpack - Maps"           ; Flags: ignoreversion recursesubdirs; Components: Modpack\Maps
+#endif
 Source: "{#ModsDir}\Sideloader Modpack - MaterialEditor Shaders\*"; DestDir: "{app}\mods\Sideloader Modpack - MaterialEditor Shaders"; Flags: ignoreversion recursesubdirs; Components: Modpack\MaterialEditor
 Source: "{#ModsDir}\Sideloader Modpack - Uncensor Selector\*"; DestDir: "{app}\mods\Sideloader Modpack - Uncensor Selector"; Flags: ignoreversion recursesubdirs; Components: Modpack\UncensorSelector
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -119,7 +135,6 @@ Source: "Input\Launcher_branding\*"; DestDir: "{app}"; Flags: ignoreversion recu
 [InstallDelete]
 ; Clean up old translations
 Type: filesandordirs; Name: "{app}\BepInEx\translation"; Components: AT\TL\EnglishTranslation
-
 Type: files; Name: "{app}\InitSetting.exe"
 Type: files; Name: "{app}\InitSetting.exe.config"
 Type: files; Name: "{app}\Initial Settings.exe"
@@ -339,6 +354,22 @@ begin
   end;
 end;
 
+function IsCharValid(Value: Char): Boolean;
+begin
+  Result := Ord(Value) <= $007F;
+end;
+
+function IsDirNameValid(const Value: string): Boolean;
+var
+  I: Integer;
+begin
+  Result := False;
+  for I := 1 to Length(Value) do
+    if not IsCharValid(Value[I]) then
+      Exit;
+  Result := True;
+end;
+
 function NextButtonClick(CurPageID: Integer): Boolean;
 var
   ResultCode: Integer;
@@ -361,6 +392,14 @@ begin
         MsgBox(ExpandConstant('{cm:MsgDeepPath}'), mbError, MB_OK);
         Result := False;
       end
+    end;
+    
+    if Result = True then
+    begin
+      if not IsDirNameValid(ExpandConstant('{app}')) then
+      begin
+        MsgBox(ExpandConstant('{cm:MsgPathNonLatin}'), mbError, MB_OK);
+      end;
     end;
 
     if Result = True then
@@ -445,9 +484,10 @@ begin
   PrepareToInstallWithProgressPage.SetProgress(0, 10);
   PrepareToInstallWithProgressPage.SetText('Verifying HF Patch files, this can take a few minutes', '');
   
+#ifndef NOVERIFY
   VerifyFiles(ExpandConstant('{srcexe}'), VerifyResult);
-#ifndef DEBUG
 #endif
+
   // If verification failed, set return of this method to it and innosetup will automatically fail the install. Still need to skip rest of the code though.
   if not (VerifyResult = '') then
   begin
@@ -512,7 +552,6 @@ begin
         DelTree(ExpandConstant('{app}\BepInEx\plugins'), True, True, True);
         DelTree(ExpandConstant('{app}\BepInEx\patchers'), True, True, True);
         DelTree(ExpandConstant('{app}\BepInEx\IPA'), True, True, True);
-        DelTree(ExpandConstant('{app}\scripts'), True, True, True);
         Exec(ExpandConstant('{cmd}'), '/c del *.dll', ExpandConstant('{app}\BepInEx'), SW_SHOW, ewWaitUntilTerminated, ResultCode);
         Exec(ExpandConstant('{cmd}'), '/c del *.dl_', ExpandConstant('{app}\BepInEx'), SW_SHOW, ewWaitUntilTerminated, ResultCode);
       end;

@@ -90,9 +90,11 @@ jp.CompUNC=無修正化
 jp.CompFIX=重要な修正
 jp.CompMISC=他の
 
+MsgPathTooLong=Your game is in a very deeply nested folder, which can cause serious issues or even prevent the game from starting.%n%nPlease move your game folder to a simpler path like for example "D:\Games\AI" and try to run this patch again.
+jp.MsgPathTooLong=ゲームは非常に深くネストされたフォルダーにあります。これにより、深刻な問題が発生したり、ゲームが開始できなくなったりする可能性があります。%n%nゲームフォルダを、たとえば「D:\Games\AI」のような単純なパスに移動して、このパッチをもう一度実行してみてください。
 
-MsgPathTooLong=Your game is in a very deep folder, which can cause serious issues or even prevent the game from starting.%n%nPlease move your game folder to a simpler path like for example "C:\Games\AIShoujo" and try to run this patch again.
-jp.MsgPathTooLong=ゲームは非常に深くネストされたフォルダーにあります。これにより、深刻な問題が発生したり、ゲームが開始できなくなったりする可能性があります。%n%nゲームフォルダを、たとえば「C：\Games\Koikatsu」のような単純なパスに移動して、このパッチをもう一度実行してみてください。
+MsgPathNonLatin=There are non-latin characters in the game installation path. This can cause issues with mods and the patch.%n%nMove your game to a simple path like "D:\Games\AI" to avoid issues. It is best to use only a-z, A-Z and 0-9.
+jp.MsgPathNonLatin=ゲームのインストールパスに非ラテン文字が含まれています。このため、MODやHFで問題が発生することがあります。%n%n問題を避けるために、ゲームを「D:\Games\AI」のようなシンプルなパスに移動してください。a-z、A-Z、0-9のみを使用するのがベストです。
 
 MsgSteamUpdatesMissing=Your game is missing official updates from Steam. Please go to your Steam Library and update AI-Shoujo before installing this patch.
 sc.MsgSteamUpdatesMissing=您的游戏缺少Steam的官方更新。 在安装此补丁之前，请转到您的Steam库并更新AI-Shoujo。
