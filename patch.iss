@@ -7,9 +7,9 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "AI-Shoujo"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "2.10"
+#define VERSION "2.11"
 ;-----------------------------------------Sideloader modpack directory
-#define ModsDir "E:\HFpatchmaking\AIS\JPDX\mods"
+#define ModsDir "E:\HFpatchmaking\AIS\steam\mods"
 ;#define ModsDir "F:\Games\KoikatsuP\mods"
 ;--Don't include any files in the build to make it go fast for testing
 ;#define DEBUG
@@ -38,7 +38,7 @@ LZMAUseSeparateProcess=yes
 ;LZMADictionarySize=208576
 LZMADictionarySize=208576
 LZMANumFastBytes=273
-LZMANumBlockThreads=2
+LZMANumBlockThreads=8
 DiskSpanning=yes
 DefaultDirName={code:GetDefaultDirName}
 
