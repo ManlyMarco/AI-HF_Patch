@@ -28,10 +28,10 @@ StartUpdate=Start mod updater (Download latest new mods and mod updates)
 IconGame=AI-Shoujo
 
 TaskIcon=Create a game &desktop icon
-TaskDelete=Delete old mods before installation (Recommended if you want to avoid any issues)
-TaskDeleteSide=Delete ALL existing sideloader mods
-TaskDeletePlugins=Delete old plugins and scripts. (Recommended if you have issues or when updating from old repacks)
-TaskDeletePluginSettings=Reset plugin settings (Recommended if you have issues)
+TaskDelete=Clean up old mods (Helps fix and avoid issues. Your old plugins will be backed up to a .zip inside game root.)
+TaskDeleteSide=Delete existing sideloader mods (Everything except for Sideloader Modpacks)
+TaskDeletePlugins=Delete BepInEx plugins (Always recommended. Do not disable unless you know what you are doing)
+TaskDeletePluginSettings=Delete plugin settings (Recommended if you have issues or when updating from old repacks)
 TaskDeleteLst=Delete custom listfiles (Disable hardmods, they will be replaced with sideloader mods. Always recommended)
 TaskSideDupes=Delete duplicate sideloader mods after installation (Only the newest versions are kept. Always recommended)
 TaskPW=Uninstall Patchwork if installed and delete Plugins folder (Optional, will free up some disk space. If you intend to use PW, make sure your version is compatible with the current game update. If you have issues, run the game without PW)

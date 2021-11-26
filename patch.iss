@@ -79,8 +79,6 @@ Name: "Modpack\MaterialEditor";                Description: "MaterialEditor (Mat
 Name: "Modpack\UncensorSelector";              Description: "UncensorSelector (Uncensors for use with UncensorSelector)"                        ; Types: full_en full extra_en extra
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
 [Files]
 Source: "HelperLib.dll";                                    DestDir: "{app}"; Flags: dontcopy
 Source: "Input\start.bat";                                  DestDir: "{tmp}\hfp"; Flags: ignoreversion recursesubdirs createallsubdirs
@@ -146,12 +144,14 @@ Type: filesandordirs; Name: "{app}\zh-CN"; Components: IllusionLaunchers
 Type: filesandordirs; Name: "{app}\zh-TW"; Components: IllusionLaunchers
 
 ; Clean up old modpacks. Large modpacks might not be fully included so don't remove here, instead they get cleaned up from old versions later
+#ifndef LITE
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack"                       ; Components: Content\Modpack
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - Bleeding Edge"       ; Components: Content\Modpack
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - Maps"                ; Components: Content\ModpackMaps
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - MaterialEditor Shaders" ; Components: Content\HS2_MaterialEditor
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - Studio"              ; Components: Content\ModpackStudio
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - Uncensor Selector"   ; Components: UNC\Selector\Pack
+#endif
 
 ; Clean up old patches and packs
 Type: files; Name: "{app}\start.bat"
