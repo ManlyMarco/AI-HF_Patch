@@ -212,9 +212,11 @@ namespace HelperLib
         [DllExport("FixPermissions", CallingConvention = CallingConvention.StdCall)]
         public static void FixPermissions([MarshalAs(UnmanagedType.LPWStr)] string path)
         {
-            ProcessWaiter.CheckForProcessesBlockingDir(Path.GetFullPath(path)).ConfigureAwait(false).GetAwaiter().GetResult();
+            try
+            {
+                ProcessWaiter.CheckForProcessesBlockingDir(Path.GetFullPath(path)).ConfigureAwait(false).GetAwaiter().GetResult();
 
-            var batContents = $@"
+                var batContents = $@"
 title Fixing permissions... 
 rem Get the localized version of Y/N to pass to takeown to make this work in different locales
 for /f ""tokens=1,2 delims=[,]"" %%a in ('""choice <nul 2>nul""') do set ""yes=%%a"" & set ""no=%%b""
@@ -229,10 +231,16 @@ echo.
 echo Fixing access rights ...
 icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
 ";
-            var batPath = Path.Combine(Path.GetTempPath(), "hfpatch_fixperms.bat");
-            File.WriteAllText(batPath, batContents);
+                var batPath = Path.Combine(Path.GetTempPath(), "hfpatch_fixperms.bat");
+                File.WriteAllText(batPath, batContents);
 
-            Process.Start(new ProcessStartInfo("cmd", $"/C \"{batPath}\"") { WindowStyle = ProcessWindowStyle.Hidden, CreateNoWindow = true });
+                Process.Start(new ProcessStartInfo("cmd", $"/C \"{batPath}\"")
+                { WindowStyle = ProcessWindowStyle.Hidden, CreateNoWindow = true });
+            }
+            catch (Exception ex)
+            {
+                AppendLog(path, "Failed to fix permissions: " + ex);
+            }
         }
 
         [DllExport("CreateBackup", CallingConvention = CallingConvention.StdCall)]
