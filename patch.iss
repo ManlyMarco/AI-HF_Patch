@@ -389,7 +389,7 @@ begin
     begin
       if (Length(ExpandConstant('{app}')) > 100) then
       begin
-        MsgBox(ExpandConstant('{cm:MsgDeepPath}'), mbError, MB_OK);
+        MsgBox(ExpandConstant('{cm:MsgPathTooLong}'), mbError, MB_OK);
         Result := False;
       end
     end;
