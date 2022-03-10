@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "AI-Shoujo"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "2.11"
+#define VERSION "2.12"
 ;-----------------------------------------Sideloader modpack directory
 #define ModsDir "E:\HFpatchmaking\AIS\steam\mods"
 ;#define ModsDir "F:\Games\KoikatsuP\mods"
@@ -16,7 +16,7 @@
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
 ;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
-#define LITE
+;#define LITE
 ;---------------------------------------------------------------------
 
 #include "_Common\Header.iss"
@@ -38,7 +38,7 @@ LZMAUseSeparateProcess=yes
 ;LZMADictionarySize=208576
 LZMADictionarySize=208576
 LZMANumFastBytes=273
-LZMANumBlockThreads=8
+LZMANumBlockThreads=6
 DiskSpanning=yes
 DefaultDirName={code:GetDefaultDirName}
 
@@ -344,8 +344,8 @@ begin
     // Always turn these off just to be safe, user can turn them back on in launcher
     if(FileExists(ExpandConstant('{app}\BepInEx\plugins\DHH_AI4.dll'))) then
       RenameFile(ExpandConstant('{app}\BepInEx\plugins\DHH_AI4.dll'), ExpandConstant('{app}\BepInEx\plugins\DHH_AI4.dl_'));
-    if(FileExists(ExpandConstant('{app}\BepInEx\plugins\Graphics\Graphics.dll'))) then
-      RenameFile(ExpandConstant('{app}\BepInEx\plugins\Graphics\Graphics.dll'), ExpandConstant('{app}\BepInEx\plugins\Graphics\Graphics.dl_'));
+    if(FileExists(ExpandConstant('{app}\BepInEx\plugins\Graphics\AIGraphics.dll'))) then
+      RenameFile(ExpandConstant('{app}\BepInEx\plugins\Graphics\AIGraphics.dll'), ExpandConstant('{app}\BepInEx\plugins\Graphics\AIGraphics.dl_'));
       
     // Prevent trying to install the redist again
     Exec('reg', 'add HKEY_LOCAL_MACHINE\SOFTWARE\Valve\Steam\Apps\CommonRedist\DirectX\Jun2010 /v dxsetup /t REG_DWORD /d 1 /f /reg:32', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
