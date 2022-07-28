@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "AI-Shoujo"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "2.12"
+#define VERSION "2.13"
 ;-----------------------------------------Sideloader modpack directory
 #define ModsDir "E:\HFpatchmaking\AIS\steam\mods"
 ;#define ModsDir "F:\Games\KoikatsuP\mods"
@@ -16,7 +16,7 @@
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
 ;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
-;#define LITE
+#define LITE
 ;---------------------------------------------------------------------
 
 #include "_Common\Header.iss"
@@ -70,7 +70,7 @@ Name: "Patch"; Description: "All free updates + game repair"; Types: full_en ful
 Name: "Modpack";                               Description: "Sideloader Modpacks {#CurrentDate} (Add additional content to the game, needs at least BepisPlugins to work)"
 #ifndef LITE
 Name: "Modpack\General";                       Description: "General (Content for making characters, always recommended)"                          ; Types: full_en full extra_en extra
-; Name: "Modpack\Studio"                       ; Description: "Studio (Additional content for making Studio scenes)"                                 ; Types: full_en full extra_en extra
+Name: "Modpack\Studio"                       ; Description: "Studio (Additional content for making Studio scenes)"                                 ; Types: full_en full extra_en extra
 ; Name: "Modpack\Maps"                         ; Description: "Maps (Additional maps for use in Studio and H scenes)"                                ; Types: full_en full extra_en extra
 ; Name: "Modpack\Animations"                   ; Description: "Animations (Additional adnimations for use in Studio and Free H)"                     ; Types: full_en full extra_en extra
 #endif
@@ -100,7 +100,7 @@ Source: "Input\_Patch\0501-steam_ect\*";                    DestDir: "{app}"; Fl
 Source: "{#ModsDir}\Sideloader Modpack\*";                      DestDir: "{app}\mods\Sideloader Modpack";                      Flags: ignoreversion recursesubdirs solidbreak; Components: Modpack\General;        
 Source: "{#ModsDir}\Sideloader Modpack - Exclusive AIS\*"; DestDir: "{app}\mods\Sideloader Modpack - Exclusive AIS"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Modpack\General
 ; Source: "{#ModsDir}\Sideloader Modpack - Bleeding Edge\*"  ; DestDir: "{app}\mods\Sideloader Modpack - Bleeding Edge"  ; Flags: ignoreversion recursesubdirs; Components: Modpack\Bleeding
-; Source: "{#ModsDir}\Sideloader Modpack - Studio\*"         ; DestDir: "{app}\mods\Sideloader Modpack - Studio"         ; Flags: ignoreversion recursesubdirs; Components: Modpack\Studio
+Source: "{#ModsDir}\Sideloader Modpack - Studio\*"         ; DestDir: "{app}\mods\Sideloader Modpack - Studio"         ; Flags: ignoreversion recursesubdirs; Components: Modpack\Studio
 ; Source: "{#ModsDir}\Sideloader Modpack - Maps\*"           ; DestDir: "{app}\mods\Sideloader Modpack - Maps"           ; Flags: ignoreversion recursesubdirs; Components: Modpack\Maps
 #endif
 Source: "{#ModsDir}\Sideloader Modpack - MaterialEditor Shaders\*"; DestDir: "{app}\mods\Sideloader Modpack - MaterialEditor Shaders"; Flags: ignoreversion recursesubdirs; Components: Modpack\MaterialEditor
@@ -110,6 +110,10 @@ Source: "{#ModsDir}\Sideloader Modpack - Uncensor Selector\*"; DestDir: "{app}\m
 Source: "Input\_Plugins\AI_UncensorSelector Base.zipmod";   DestDir: "{app}\mods"; Flags: ignoreversion solidbreak; Components: UNC\Selector
 ; Always install critical fixes
 Source: "Input\_Plugins\_out\IllusionFixes_AIGirl\BepInEx\patchers\*"; DestDir: "{app}\BepInEx\patchers"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch
+; If BP isn't installed, exclude BP uncensors from the random selection
+Source: "Input\US_config_noBP.cfg"; DestDir: "{app}\BepInEx\config"; DestName: "com.deathweasel.bepinex.uncensorselector.cfg"; Flags: solidbreak
+; This config only allows BP uncensors to be chosen by random
+Source: "Input\US_config_BP.cfg";   DestDir: "{app}\BepInEx\config"; DestName: "com.deathweasel.bepinex.uncensorselector.cfg"; Flags: solidbreak; Components: UNC\Selector\BetterPenetration
 #endif
 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -137,7 +141,7 @@ Type: files; Name: "{app}\InitSetting.exe"
 Type: files; Name: "{app}\InitSetting.exe.config"
 Type: files; Name: "{app}\Initial Settings.exe"
 Type: files; Name: "{app}\Initial Settings.exe.config"                     
-Type: filesandordirs; Name: "{app}\UserData\LauncherEN"; Components: IllusionLaunchers
+Type: filesandordirs; Name: "{app}\BepInEx\LauncherEN"; Components: IllusionLaunchers
 ; Used by stock launcher in steam release, remove to declutter if using custom launcher
 Type: filesandordirs; Name: "{app}\ja-JP"; Components: IllusionLaunchers   
 Type: filesandordirs; Name: "{app}\zh-CN"; Components: IllusionLaunchers
@@ -203,8 +207,8 @@ Type: filesandordirs; Name: "{app}\AI-Syoujyo_Data"; Check: IsSteam
 ; Prevent both disabled and enabled dlls existing at the same time, they will get restored later
 Type: files; Name: "{app}\BepInEx\plugins\DHH_AI4.dll"
 Type: files; Name: "{app}\BepInEx\plugins\DHH_AI4.dl_"
-Type: files; Name: "{app}\BepInEx\plugins\Graphics\Graphics.dll"
-Type: files; Name: "{app}\BepInEx\plugins\Graphics\Graphics.dl_"
+Type: files; Name: "{app}\BepInEx\plugins\Graphics\AIGraphics.dll"
+Type: files; Name: "{app}\BepInEx\plugins\Graphics\AIGraphics.dl_"
 
 ; Clean dlls completely to fix problems with copied/unnecessary/old dlls. All dlls are included in the patch data
 Type: filesandordirs; Name: "{app}\AI-Syoujyo_Data\Managed"; Components: Patch
