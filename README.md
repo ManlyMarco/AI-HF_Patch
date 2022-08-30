@@ -19,6 +19,8 @@ Check the [Releases](https://github.com/ManlyMarco/AI-HF_Patch/releases) page fo
 3. You can customize the install but for beginners it's recommended to use the default settings.
 4. Wait until it's done and enjoy the game!
 
+*Note: If you want to run the game under Wine/Proton (Linux, SteamOS, macOS, etc.), read [this](https://github.com/Mantas-2155X/illusion-wine-guide) and [this](https://docs.bepinex.dev/articles/advanced/proton_wine.html).*
+
 ## What mods are included?
 You can see a list of all included plugins and links to their websites and authors [here](https://github.com/ManlyMarco/AI-HF_Patch/blob/master/Plugin%20Readme.md). You can see what content mods are included after installing the patch by running KKManager (installed to the game directory) and navigating to the zipmods tab.
 
