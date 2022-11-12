@@ -63,7 +63,7 @@
 - Author(s):         https://www.patreon.com/joan6694
 - More information:  https://www.patreon.com/joan6694
 
-# AIUS v1.11.1
+# AIUS v1.12.0
 - Short description: Convenient UI improvements
 - Author(s):         https://www.patreon.com/joan6694
 - More information:  https://www.patreon.com/joan6694
@@ -98,7 +98,7 @@
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
 
-# BepisPlugins v18.2
+# BepisPlugins v19.0.2
 - Short description: Essential plugins required by many other plugins to function
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/BepisPlugins
@@ -133,7 +133,7 @@
 - Author(s):         denikson
 - More information:  https://github.com/denikson/BepInEx.ScriptLoader
 
-# Camera Target Fix v20.1
+# Camera Target Fix v20.2
 - Short description: A collection of important fixes
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
@@ -163,7 +163,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/CharacterReplacer
 
-# Cheat Tools v3.1.1
+# Cheat Tools v3.2
 - Short description: Trainer, press F12 to open
 - Author(s):         https://github.com/ManlyMarco/IllusionCheatTools
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
@@ -203,7 +203,7 @@
 - Author(s):         https://github.com/Keelhauled
 - More information:  https://github.com/IllusionMods/DragAndDrop
 
-# Dynamic Bone Editor v1.0.4
+# Dynamic Bone Editor v1.0.5
 - Short description: Edit properties of Dynamic Bones for accessories
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -288,7 +288,7 @@
 - Author(s):         essu
 - More information:  https://roy12mods.com/wp/essus-headbundleredirect-for-ai-hs2/
 
-# Heelz v1.15.3
+# Heelz v1.15.4
 - Short description: Support for high heel shoes
 - Author(s):         Animal42069
 - More information:  https://www.patreon.com/Animal42069
@@ -303,7 +303,7 @@
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/HideAllUI
 
-# HLightControl v1.2.4
+# HLightControl v1.2.5
 - Short description: Allows you to change some light settings
 - Author(s):         https://www.patreon.com/2155X
 - More information:  https://www.patreon.com/2155X
@@ -313,7 +313,7 @@
 - Author(s):         hooh-hooah
 - More information:  https://github.com/hooh-hooah/AI_Hooah
 
-# Housing Helper v1.1.1.0
+# Housing Helper v1.2.0.0
 - Short description: It allows objects to be rotated and moved below ground
 - Author(s):         https://www.patreon.com/Animal42069
 - More information:  https://www.patreon.com/Animal42069
@@ -337,6 +337,11 @@
 - Short description: Hide character body in studio for trickery with clothes
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
+# Item Layer Edit v1.1.0.0
+- Short description: Switch objects between chara and map layers
+- Author(s):         Keelhauled
+- More information:  https://github.com/Keelhauled/KeelPlugins
 
 # KKManager v0.19.0.0
 - Short description: Manage and update mods, browse cards
@@ -393,7 +398,7 @@
 - Author(s):         Mikke
 - More information:  https://mikkemods.blogspot.com/
 
-# Material Editor v3.1.17
+# Material Editor v3.1.19
 - Short description: Material editing in maker and studio
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -458,7 +463,7 @@
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/KoikatuGameplayMods
 
-# Overlay Mods v6.0.7
+# Overlay Mods v6.1
 - Short description: Set custom body, clothes and eye textures
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion-Overlay-Mods
@@ -488,7 +493,7 @@
 - Author(s):         https://github.com/FairBear
 - More information:  https://github.com/FairBear/AI_PovX
 
-# PregnancyPlus v7.6
+# PregnancyPlus v7.8
 - Short description: Adds additional belly sliders in Studio and Maker
 - Author(s):         thojmr
 - More information:  https://github.com/thojmr/KK_PregnancyPlus/releases
@@ -503,7 +508,7 @@
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/QuickAccessBox
 
-# Remove Cards To Recycle Bin v1.1.1
+# Remove Cards To Recycle Bin v1.2
 - Short description: Move removed/overwritten cards to recycle bin
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_RemoveToRecycleBin
@@ -518,7 +523,7 @@
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionTrapMods
 
-# RuntimeUnityEditor v2.7
+# RuntimeUnityEditor v4.0.1.1
 - Short description: Debugging and development tool
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
@@ -593,7 +598,7 @@
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# StudioWindowResize v1.1
+# StudioWindowResize v1.1.1
 - Short description: Makes studio selection windows larger so more items are visible
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -608,12 +613,12 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/TranslationTools
 
-# Timeline v1.1.5
+# Timeline v1.1.6
 - Short description: Advanced animation editor for Studio (Ctrl+T, read the Help)
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HSPlugins
 
-# Title shortcuts v1.2.2.268
+# Title shortcuts v1.3.0.0
 - Short description: Adds hotkeys to main menu; Can auto load chara maker on start
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
@@ -623,7 +628,7 @@
 - Author(s):         GeBo
 - More information:  https://github.com/GeBo1/GeBoPlugins
 
-# UIScalerAndWidescreenSupport v1.0.1
+# UIScalerAndWidescreenSupport v1.0.2
 - Short description: Allows widescreen and UI scaling
 - Author(s):         Hijack Hornet
 - More information:  https://github.com/HijackHornet/IllusionMods
@@ -633,7 +638,7 @@
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# UnlockPlayerHClothes v1.4.3
+# UnlockPlayerHClothes v1.4.4
 - Short description: Fixes inability to change clothes in h scenes
 - Author(s):         https://www.patreon.com/2155X
 - More information:  https://www.patreon.com/2155X
@@ -643,12 +648,12 @@
 - Author(s):         https://www.patreon.com/2155X
 - More information:  https://www.patreon.com/2155X
 
-# VideoExport v1.2.5
+# VideoExport v1.2.6
 - Short description: Video and image sequence recorder
 - Author(s):         https://www.patreon.com/joan6694
 - More information:  https://www.patreon.com/joan6694
 
-# XUnity Auto Translator v5.1.0
+# XUnity Auto Translator v5.2.0
 - Short description: Translation loader
 - Author(s):         bbepis and others
 - More information:  https://github.com/bbepis/XUnity.AutoTranslator
