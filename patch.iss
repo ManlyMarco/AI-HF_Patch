@@ -386,6 +386,23 @@ begin
 
   if (CurPageID = wpSelectDir) then
   begin
+    if Result = True then
+    begin
+      if (FileExists(ExpandConstant('{app}\EmotionCreators.exe'))
+      or FileExists(ExpandConstant('{app}\Koikatu.exe'))
+      or FileExists(ExpandConstant('{app}\Koikatsu Party.exe'))
+      or FileExists(ExpandConstant('{app}\KoikatsuSunshine.exe'))
+      or FileExists(ExpandConstant('{app}\KoiKoiMonogatari.exe'))
+      or FileExists(ExpandConstant('{app}\KoiKoiMonogatariVR.exe'))
+      or FileExists(ExpandConstant('{app}\PlayHome.exe'))
+      or FileExists(ExpandConstant('{app}\HoneySelect2.exe'))
+      or FileExists(ExpandConstant('{app}\VR_Kanojo.exe'))) then
+      begin
+        MsgBox(ExpandConstant('{cm:MsgDifferentGameDetected}'), mbError, MB_OK);
+        Result := False;
+      end
+    end;
+    
     if ((not FileExists(ExpandConstant('{app}\AI-Syoujyo_Data\resources.assets'))) and (not FileExists(ExpandConstant('{app}\AI-Shoujo_Data\resources.assets')))) then
     begin
       if(SuppressibleMsgBox(ExpandConstant('{cm:MsgExeNotFound}'), mbError, MB_YESNO, 0) = IDNO) then
@@ -418,19 +435,6 @@ begin
       end
     end;
 
-    if Result = True then
-    begin
-      if (FileExists(ExpandConstant('{app}\EmotionCreators.exe')) 
-      or FileExists(ExpandConstant('{app}\Koikatu.exe')) 
-      or FileExists(ExpandConstant('{app}\Koikatsu Party.exe')) 
-      or FileExists(ExpandConstant('{app}\PlayHome.exe')) 
-      or FileExists(ExpandConstant('{app}\HoneySelect2.exe'))) then
-      begin
-        MsgBox(ExpandConstant('{cm:MsgDifferentGameDetected}'), mbError, MB_OK);
-        Result := False;
-      end
-    end;
-    
     if Result = True then
     begin
       // Check for file corruptions
