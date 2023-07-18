@@ -27,7 +27,7 @@ Here's a video guide that might be useful. The guide is mostly universal between
 
 ### Text guide
 1. Install AI Shoujo to a directory with no Japanese characters in its path (e.g. D:\Games\AIS, if you're installing AIS on Steam you souldn't have to worry about this)
-2. Download the latest HF Patch release from [Releases](https://github.com/ManlyMarco/AI-HF_Patch/releases/latest). You should get a single .exe file along with a few .bin files. You can place these files anywhere you want, but they HAVE to be in the same folder together. DO NOT download any .zip files from GitHub - they contain source code for the patch, not the patch itself.
+2. Download the latest HF Patch release from [Releases](https://github.com/ManlyMarco/AI-HF_Patch/releases/latest). You should get a single .exe file along with a few .bin files. You can place these files anywhere you want (except the folder where the game is located), but they HAVE to be in the same folder together. DO NOT download any .zip files from GitHub - they contain source code for the patch, not the patch itself.
 4. Install the latest HF Patch by running the .exe and following the wizard. The default settings should work well for most users.
    - If you use the light version of the patch its a good idea to update your sideloader separately, you can do this by selecting update in the launcher or using the look for mods option in KKManager.
 5. Done! You can now start the game launcher as usual and you will notice some new options straight away. You can remove the downloaded patcher files now if you want to save some space.
@@ -48,17 +48,6 @@ Special patch is included in HF Patch, you don't have to install it manually. It
 ## Discussion and help
 If you need any help, [check the wiki](https://wiki.anime-sharing.com/hgames/index.php?title=AI_Syoujyo) or visit the [Illusion Soft discord server](https://discord.gg/illusionsoft) and ask in the #ai-help channel. Asking in the #ai-help channel instead of other places is the fastest way to get help, you can even search it for your issue to see if someone already answered it. There are also chat and card sharing channels on the server!
 
-### General FAQ / Notes
-- You can configure many plugins by Pressing F1 and then "Plugin settings". You can also see most of the plugin hotkeys in this menu (and change them).
-- You only need to install the latest version of the patch. If you installed a previous version you don't have to do anything, just install the latest version as normal.
-- Installing HF Patch will add free updates, which contain Studio (separate exe file). For many people this is the only mode they use (apart from character maker to make characters for use in studio), so it is highly recommended that you check it out. All of AI Shoujo HF Patch preview images were made in studio. You can see other people's creations and download their studio scenes from the Discord server and various card sharing boorus.
-- HF Patch does not contain the full game, paid expansions or any other pirated content. The full game needs to be already installed for the patch to work. If you want to use the VR module, also install it before patching! All paid DLC are optional and not required, you can skip them and the patch will still work fine (some features might be disabled/unavailable).
-- You can install HF Patch over almost any game install and have it work perfectly, and you can run it again to enable/disable some plugins. This patch will automatically fix many broken game/mod installs and common issues. Just make sure to let it remove all old mods when asked.
-- It's recommended to install all content mods if you plan to download character cards (Studio modpack is optional in case you won't use studio) - they are required by many cards and scenes. If you find a card that is showing mod missing warnings try updating Sideloader Modpacks. This can be done by simply pressing the update button in the launcher or by launching KKManager and using the look for mods option.
-- The mods included in the patch don't modify any game files and can be easily disabled by removing the "winhttp.dll" file from your game directory. Official patches are applied permanently.
-- Please leave the modders some positive feedback or help them in some other way!
-- There is no warranty on this patch or on any of the included mods. You are installing this patch at your own risk. That being said, we try our best to help in case of issues. If you find any bugs, do let us know so they can be fixed.
-
 ## Important notes, please read
 - HF Patch does not contain the full game, paid expansions or any other pirated content. The full game needs to be already installed for the patch to work.
 - If you have installed a previous HF Patch or separate mods it is recommended to remove ALL mods when prompted. This will prevent any potential mod conflicts or outdated mods causing problems.
@@ -70,8 +59,19 @@ If you need any help, [check the wiki](https://wiki.anime-sharing.com/hgames/ind
 - Please leave the modders some positive feedback or help them in some other way!
 - There is no warranty on this patch or on any of the included mods. You are installing this patch at your own risk.
 
+### General FAQ / Notes
+- You can configure many plugins by Pressing F1 and then "Plugin settings". You can also see most of the plugin hotkeys in this menu (and change them).
+- You only need to install the latest version of the patch. If you installed a previous version you don't have to do anything, just install the latest version as normal.
+- Installing HF Patch will add free updates, which contain Studio (separate exe file). For many people this is the only mode they use (apart from character maker to make characters for use in studio), so it is highly recommended that you check it out. All of AI Shoujo HF Patch preview images were made in studio. You can see other people's creations and download their studio scenes from the Discord server and various card sharing boorus.
+- HF Patch does not contain the full game, paid expansions or any other pirated content. The full game needs to be already installed for the patch to work. If you want to use the VR module, also install it before patching! All paid DLC are optional and not required, you can skip them and the patch will still work fine (some features might be disabled/unavailable).
+- You can install HF Patch over almost any game install and have it work perfectly, and you can run it again to enable/disable some plugins. This patch will automatically fix many broken game/mod installs and common issues. Just make sure to let it remove all old mods when asked.
+- It's recommended to install all content mods if you plan to download character cards (Studio modpack is optional in case you won't use studio) - they are required by many cards and scenes. If you find a card that is showing mod missing warnings try updating Sideloader Modpacks. This can be done by simply pressing the update button in the launcher or by launching KKManager and using the look for mods option.
+- The mods included in the patch don't modify any game files and can be easily disabled by removing the "winhttp.dll" file from your game directory. Official patches are applied permanently.
+- Please leave the modders some positive feedback or help them in some other way!
+- There is no warranty on this patch or on any of the included mods. You are installing this patch at your own risk. That being said, we try our best to help in case of issues. If you find any bugs, do let us know so they can be fixed.
+
 ### FAQ / Notes for the Steam release
-- Consider pausing your AI Shoujo updates on Steam. New updates might install automatically and break mods (which can break the game in return) with no user input. 
+- Consider pausing your AI Shoujo updates on Steam. New updates might install automatically and break mods (which can break the game in return) with no user input. If this happens you can fix the mods by installing the patch again.
 - You can prevent Steam from showing you play the game by starting the .exe manually (not from the Steam library). Make your games private to be extra sure. The game can also run with Steam turned off. Just know that we won't judge you for your hours played :)
 - If you verify game files in your Steam client, you will lose many features and have to re-run HF Patch to get them back. You can do this if you have issues as it will restore game files but not remove any of your data.
 - Included fan translations are only used to fill in the gaps in official translation (DLC, studio, mods). The official English/Chinese translations are not modified.
