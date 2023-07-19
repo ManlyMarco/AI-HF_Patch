@@ -19,7 +19,7 @@ You can see a full list of what HF Patch contains [here](https://github.com/Manl
 Note that HF Patch does not contain the full game, paid expansions or any other pirated content. The full game needs to be already installed for the patch to work. If you want to use the VR module, also install it before patching!
 
 ## Download
-Check the [Releases](https://github.com/ManlyMarco/AI-HF_Patch/releases) page for download links. To get mail updates for each new release you can watch this repositiory (top right) or watch the linked patreon page.
+Check the [Releases](https://github.com/ManlyMarco/AI-HF_Patch/releases) page for download links. The magnet links need to be downloaded with a torrent client like [qBittorrent](https://www.qbittorrent.org/). To get mail updates for each new release you can watch this repositiory (top right) or watch the linked patreon page.
 
 ## How to install the patch?
 Here's a video guide that might be useful. The guide is mostly universal between different games, but there might be some differences.
