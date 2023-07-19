@@ -26,7 +26,7 @@ Here's a video guide that might be useful. The guide is mostly universal between
 - [How to get the game from DMM, install it and install HF Patch (Use the chapter selection to easily find what you are looking for)](https://youtu.be/WLoY5WCqTSw)
 
 ### Text guide
-1. Install AI Shoujo to a directory with no Japanese characters in its path (e.g. D:\Games\AIS, if you're installing AIS on Steam you souldn't have to worry about this)
+1. Install AI Shoujo to a directory with no Japanese characters in its path (e.g. D:\Games\AIS, if you're installing AIS on Steam you shouldn't have to worry about this)
 2. Download the latest HF Patch release from [Releases](https://github.com/ManlyMarco/AI-HF_Patch/releases/latest). You should get a single .exe file along with a few .bin files. You can place these files anywhere you want (except the folder where the game is located), but they HAVE to be in the same folder together. DO NOT download any .zip files from GitHub - they contain source code for the patch, not the patch itself.
 4. Install the latest HF Patch by running the .exe and following the wizard. The default settings should work well for most users.
    - If you use the light version of the patch its a good idea to update your sideloader separately, you can do this by selecting update in the launcher or using the look for mods option in KKManager.
