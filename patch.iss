@@ -233,7 +233,7 @@ Name: delete\Plugins; Description: "{cm:TaskDeletePlugins}";
 Name: delete\Config; Description: "{cm:TaskDeletePluginSettings}"; Flags: unchecked
 Name: delete\scripts; Description: "Delete old scripts"
 ;Name: delete\Listfiles; Description: "{cm:TaskDeleteLst}"
-Name: fixSideloaderDupes; Description: "{cm:TaskSideDupes}";
+;Name: fixSideloaderDupes; Description: "{cm:TaskSideDupes}";
 
 [Icons]
 Name: "{userdesktop}\{cm:IconGame}"; Filename: "{app}\InitSetting.exe"; IconFilename: "{app}\InitSetting.exe"; WorkingDir: "{app}\"; Flags: createonlyiffileexists; Tasks: desktopicon; Comment: "{cm:IconGame}"
@@ -324,7 +324,7 @@ begin
     // If garbage plugins are detected, delete all old mods by default
     if(FileExists(ExpandConstant('{app}\BepInEx\config\EC.Core.Fixes.MakerFPS.cfg')) or FileExists(ExpandConstant('{app}\BepInEx\CardCacher.dll')) or FileExists(ExpandConstant('{app}\BepInEx\0Harmony.dll')) or FileExists(ExpandConstant('{app}\BepInEx\TexResPatch.dll')) or FileExists(ExpandConstant('{app}\BepInEx\KK_GUIDMigration.dll')) or FileExists(ExpandConstant('{app}\BepInEx\Sideloader.dll')) or FileExists(ExpandConstant('{app}\BepInEx\Assembly-CSharp.dll'))) then
     begin
-      WizardForm.TasksList.CheckItem(WizardForm.TasksList.Items.Count - 6, coCheckWithChildren);
+      WizardForm.TasksList.CheckItem(WizardForm.TasksList.Items.Count - 5, coCheckWithChildren);
     end;
     
   end;
@@ -342,8 +342,8 @@ begin
     //    RemoveJapaneseCards(ExpandConstant('{app}'));
     
     // Always clean up sideloader mods in case user already messed up
-    if IsTaskSelected('fixSideloaderDupes') then
-        RemoveSideloaderDuplicates(ExpandConstant('{app}'));
+    //if IsTaskSelected('fixSideloaderDupes') then
+    //    RemoveSideloaderDuplicates(ExpandConstant('{app}'));
         
     FixConfig(ExpandConstant('{app}'));
     WriteVersionFile(ExpandConstant('{app}'), '{#VERSION}');
