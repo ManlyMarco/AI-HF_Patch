@@ -4,7 +4,7 @@ A patch for [AI-Shoujo](http://www.illusion.jp/preview/aisyoujyo/index.php) with
 
 Read the [full HF Patch manual](https://gist.github.com/ManlyMarco/31b78470b8e190686c7ed9686c237e3f) to learn more about what it is, what it does, how to use it, and how to solve common issues.
 
-HF Patch does not contain the full game, paid expansions or any other pirated content. You have to buy the game separately on [Steam](https://store.steampowered.com/app/1250650/AIShoujoAI/) (international version), and on [DLsite](https://www.dlsite.com/pro/work/=/product_id/VJ013003.html) or [DMM](https://dlsoft.dmm.co.jp/detail/illusion_0028/) (Japanese version). Once patched, the international version is mostly equal to the Japanese version with the patch installed (some DLC is not supported, but there are built-in English and Chinese translations).
+HF Patch does not contain the full game, paid expansions or any other pirated content. You have to buy the game separately on [Steam](https://store.steampowered.com/app/1250650/AIShoujoAI/) (international version), the Japanese version is no longer being sold. Once patched, the international version is mostly equal to the Japanese version with the patch installed (some DLC is not supported, but there are built-in English and Chinese translations).
 
 You can support development of HF Patch and many of the included plugins through my Patreon page: https://www.patreon.com/ManlyMarco
 
