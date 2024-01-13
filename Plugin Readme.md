@@ -1,3 +1,8 @@
+# Accessories to Studio Items v1.0.1
+- Short description: Makes normal character accessories available as items
+- Author(s):         DeathWeasel1337
+- More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
 # Additional Accessory Controls v1.2.5
 - Short description: QoL improvements to accessory handling and outfits
 - Author(s):         OrangeSpork
@@ -33,7 +38,7 @@
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/AI_ClothColliders
 
-# AI_Colliders v1.2
+# AI_Colliders v1.3
 - Short description: Cloth physics support for mods
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/AI_ClothColliders
@@ -53,17 +58,17 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KoikatuGameplayMods
 
-# AIABMX (BonemodX) v5.0.5
+# AIABMX (BonemodX) v5.1
 - Short description: More sliders in character maker
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/ABMX
 
-# AIPE v2.13.3.1
+# AIPE v2.15.1
 - Short description: Additional studio object manipulation
 - Author(s):         https://www.patreon.com/joan6694
 - More information:  https://www.patreon.com/joan6694
 
-# AIUS v1.12.0
+# AIUS v1.14.2
 - Short description: Convenient UI improvements
 - Author(s):         https://www.patreon.com/joan6694
 - More information:  https://www.patreon.com/joan6694
@@ -93,12 +98,17 @@
 - Author(s):         https://mikkemods.blogspot.com
 - More information:  https://mikkemods.blogspot.com/
 
-# BepInEx v5.4.21.0
+# BepInEx v5.4.22.0
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
 
-# BepisPlugins v19.1
+# BepInEx.SplashScreen v2.2.0.0
+- Short description: A loading screen on game startup with information about patchers and plugins being currently loaded
+- Author(s):         BepInEx
+- More information:  https://github.com/BepInEx/BepInEx.SplashScreen
+
+# BepisPlugins v19.4
 - Short description: Essential plugins required by many other plugins to function
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/BepisPlugins
@@ -123,7 +133,7 @@
 - Author(s):         https://www.patreon.com/joan6694
 - More information:  https://www.patreon.com/joan6694
 
-# Browser Folders v2.6.2
+# Browser Folders v3.2
 - Short description: Adds folder support to studio character and scene lists
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_BrowserFolders
@@ -132,11 +142,6 @@
 - Short description: Runs user scripts from scripts folder
 - Author(s):         denikson
 - More information:  https://github.com/denikson/BepInEx.ScriptLoader
-
-# Camera Target Fix v20.2
-- Short description: A collection of important fixes
-- Author(s):         IllusionMods
-- More information:  https://github.com/IllusionMods/IllusionFixes
 
 # Catch Unity Event Exceptions v1.0
 - Short description: Prevents some bugs in plugins from affecting other plugins
@@ -163,7 +168,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/CharacterReplacer
 
-# Cheat Tools v3.2.1
+# Cheat Tools v3.3
 - Short description: Trainer, press F12 to open
 - Author(s):         https://github.com/ManlyMarco/IllusionCheatTools
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
@@ -178,7 +183,7 @@
 - Author(s):         https://github.com/kkykkykky/
 - More information:  none
 
-# Configuration Manager v17.1
+# Configuration Manager v18.2
 - Short description: Can change plugin settings. Press F1 to open, not visible inside HMD
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.ConfigurationManager
@@ -207,11 +212,6 @@
 - Short description: Edit properties of Dynamic Bones for accessories
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
-
-# Ear Wiggle v1.0.1
-- Short description: Adds Dynamic Bones to the Ears allowing Ears to Wiggle
-- Author(s):         OrangeSpork
-- More information:  https://github.com/OrangeSpork/EarWiggle
 
 # Enable Full Screen Toggle v1.0
 - Short description: Toggle full screen with alt+enter
@@ -243,6 +243,11 @@
 - Author(s):         OrangeSpork
 - More information:  https://github.com/OrangeSpork/EyeLookAdjuster
 
+# FixCharaListPlugin v0.3.1
+- Short description: Lessens the slowdown when having massive amounts of cards added to the game
+- Author(s):         HentaiSan
+- More information:  https://yuki-portal.com/uploader/honeyselect2/mod/システムパッチ-プラグイン/223181/
+
 # FK and IK v1.1.3
 - Short description: Adds FK/IK mode in studio
 - Author(s):         https://github.com/DeathWeasel1337
@@ -268,7 +273,7 @@
 - Author(s):         OrangeSpork
 - More information:  https://github.com/OrangeSpork/Graphics
 
-# Graphics Settings v1.2.1
+# Graphics Settings v1.3
 - Short description: More settings to make graphics more or less demanding
 - Author(s):         https://github.com/BepInEx/BepInEx.GraphicsSettings
 - More information:  https://github.com/BepInEx/BepInEx.GraphicsSettings
@@ -318,12 +323,17 @@
 - Author(s):         https://www.patreon.com/Animal42069
 - More information:  https://www.patreon.com/Animal42069
 
-# IllusionLaunchers v3.3.2.0
+# IllusionFixes v21.3
+- Short description: A collection of important fixes
+- Author(s):         IllusionMods
+- More information:  https://github.com/IllusionMods/IllusionFixes
+
+# IllusionLaunchers v3.4.1.36419
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
 
-# IllusionLaunchers v3.3.2.0
+# IllusionLaunchers v3.4.1.36419
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
@@ -343,7 +353,7 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# KKManager v0.21.4.0
+# KKManager v1.0.0.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
@@ -357,6 +367,11 @@
 - Short description: Fixes sluggish mouse cursor
 - Author(s):         https://github.com/getraid-gg
 - More information:  https://github.com/getraid-gg/AILookSpeedUnlocker
+
+# LoveMachine v3.16.2
+- Short description: Adds support for buttplug.io compatible strokers and vibrators
+- Author(s):         Sauceke
+- More information:  https://github.com/Sauceke/LoveMachine
 
 # Maker Defaults v1.1
 - Short description: Customize default character maker settings
@@ -398,7 +413,7 @@
 - Author(s):         Mikke
 - More information:  https://mikkemods.blogspot.com/
 
-# Material Editor v3.1.21
+# Material Editor v3.4.1
 - Short description: Material editing in maker and studio
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -423,7 +438,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/ModBoneImplantor
 
-# Modding API v1.35
+# Modding API v1.37
 - Short description: Modding API needed by many plugins
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/IllusionMods/IllusionModdingAPI
@@ -448,7 +463,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.Utility
 
-# NodesConstraints v1.2.2
+# NodesConstraints v1.2.3
 - Short description: Connect studio items to create custom animations
 - Author(s):         https://www.patreon.com/joan6694
 - More information:  https://www.patreon.com/joan6694
@@ -463,7 +478,7 @@
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/KoikatuGameplayMods
 
-# Overlay Mods v6.1
+# Overlay Mods v6.1.2
 - Short description: Set custom body, clothes and eye textures
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion-Overlay-Mods
@@ -498,7 +513,7 @@
 - Author(s):         Mikke
 - More information:  https://mikkemods.blogspot.com/
 
-# QuickAccessBox v2.4.5
+# QuickAccessBox v3.1.1.1
 - Short description: Quick search studio items
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/QuickAccessBox
@@ -518,7 +533,7 @@
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionTrapMods
 
-# RuntimeUnityEditor v4.2
+# RuntimeUnityEditor v5.2.1
 - Short description: Debugging and development tool
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
@@ -568,6 +583,11 @@
 - Author(s):         GeBo
 - More information:  https://gebo1.github.io/GeBoPlugins/src/StudioSceneNavigation/
 
+# Studio Transform Orientation v1.1.2
+- Short description: Toggle between World and Local transform orientations in Studio
+- Author(s):         kkykkykky
+- More information:  https://github.com/kkykkykky/StudioTransformOrientation
+
 # StudioAccessoryNames v1.1.0
 - Short description: Shows the accessory names in studio
 - Author(s):         Mantas-2155X aka 2155X
@@ -608,7 +628,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/TranslationTools
 
-# Timeline v1.1.7
+# Timeline v1.1.9
 - Short description: Advanced animation editor for Studio (Ctrl+T, read the Help)
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HSPlugins
@@ -628,7 +648,7 @@
 - Author(s):         Hijack Hornet
 - More information:  https://github.com/HijackHornet/IllusionMods
 
-# Uncensor Selector v3.11.6
+# Uncensor Selector v3.11.8
 - Short description: Support for user-selectable uncensors
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
