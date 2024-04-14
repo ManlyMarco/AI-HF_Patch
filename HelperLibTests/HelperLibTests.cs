@@ -22,5 +22,11 @@ namespace HelperLib.Tests
         {
             HelperLib.FixConfig(@"D:\Games\Koikatsu");
         }
+
+        [TestMethod()]
+        public void RemoveModsExceptModpacksTest()
+        {
+            HelperLib.RemoveModsExceptModpacks(@"F:\Games\HoneySelect2_DX");
+        }
     }
 }
