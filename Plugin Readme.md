@@ -23,11 +23,6 @@
 - Author(s):         https://github.com/kkykkykky
 - More information:  https://github.com/kkykkykky
 
-# AI Studio Better Penetration v2.2.1.0
-- Short description: BetterPenetration for studio
-- Author(s):         Animal42069
-- More information:  https://www.patreon.com/Animal42069
-
 # AI_BetterHScenes v2.6.6
 - Short description: Fixes H performance bugs and adds extra features
 - Author(s):         https://www.patreon.com/2155X
@@ -63,7 +58,7 @@
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/ABMX
 
-# AIPE v2.17.0
+# AIPE v2.17.1
 - Short description: Additional studio object manipulation
 - Author(s):         https://www.patreon.com/joan6694
 - More information:  https://www.patreon.com/joan6694
@@ -98,7 +93,7 @@
 - Author(s):         https://mikkemods.blogspot.com
 - More information:  https://mikkemods.blogspot.com/
 
-# BepInEx v5.4.23.1
+# BepInEx v5.4.23.2
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
@@ -363,7 +358,7 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# KKManager v1.2.0.0
+# KKManager v1.3.0.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
@@ -378,7 +373,7 @@
 - Author(s):         https://github.com/getraid-gg
 - More information:  https://github.com/getraid-gg/AILookSpeedUnlocker
 
-# LoveMachine v3.18.0
+# LoveMachine v3.19.0
 - Short description: Adds support for buttplug.io compatible strokers and vibrators
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
@@ -423,7 +418,7 @@
 - Author(s):         Mikke
 - More information:  https://mikkemods.blogspot.com/
 
-# Material Editor v3.8.0
+# Material Editor v3.9.0
 - Short description: Material editing in maker and studio
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -473,7 +468,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.Utility
 
-# NodesConstraints v1.3.2
+# NodesConstraints v1.3.3
 - Short description: Connect studio items to create custom animations
 - Author(s):         https://www.patreon.com/joan6694
 - More information:  https://www.patreon.com/joan6694
@@ -528,7 +523,7 @@
 - Author(s):         Mikke
 - More information:  https://mikkemods.blogspot.com/
 
-# QuickAccessBox v3.1.1.1
+# QuickAccessBox v3.2
 - Short description: Quick search studio items
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/QuickAccessBox
@@ -643,7 +638,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/TranslationTools
 
-# Timeline v1.4.0
+# Timeline v1.4.1
 - Short description: Advanced animation editor for Studio (Ctrl+T, read the Help)
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HSPlugins
