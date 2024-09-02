@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "AI-Shoujo"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "2.22"
+#define VERSION "2.23"
 ;-----------------------------------------Sideloader modpack directory
 #define GameDir "L:\HFpatchmaking\HS\MODSOURCE"
 ;#define ModsDir "F:\Games\KoikatsuP\mods"
