@@ -34,7 +34,7 @@ Name: "AT\TL\Subtitles";                       Description: "Subtitles v2.3.2 (W
 Name: "UNC";                                   Description: "{cm:CompUNC}"                                                                         ; Types: full_en full extra_en extra
 Name: "UNC\Selector";                          Description: "Uncensor Selector v3.12.3 (Support for user-selectable uncensors)"                    ; Types: full_en full extra extra_en
 Name: "UNC\Selector\Beaver";                   Description: "Beaver plugin v1.2.3 (Allows changing some uncensor-specific settings in maker)"      ; Types: full_en full extra extra_en
-Name: "UNC\Selector\BetterPenetration";        Description: "BetterPenetration v5.0.1.2 (Improves how penetration looks in H scenes)"              ; Types: full_en full extra extra_en
+Name: "UNC\Selector\BetterPenetration";        Description: "BetterPenetration v5.0.1.4 (Improves how penetration looks in H scenes)"              ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "Content";                               Description: "Additional content for character and scene creation (Needed to properly load most character cards and scenes)"; Types: full_en full extra extra_en
 Name: "Content\AdditionalAccessoryControls";   Description: "Additional Accessory Controls v1.2.5 (QoL improvements to accessory handling and outfits)"; Types: full_en full extra extra_en
@@ -43,11 +43,11 @@ Name: "Content\Colliders";                     Description: "AI_Colliders v1.3.1
 Name: "Content\CopyChaBodyMat";                Description: "AI_CopyChaBodyMat v1.0 (Copies the body material unto clothing that have part of the body mesh with them)"; Types: full_en full extra extra_en
 Name: "Content\DynamicBoneEditor";             Description: "Dynamic Bone Editor v1.0.5 (Edit properties of Dynamic Bones for accessories)"        ; Types: full_en full extra extra_en
 Name: "Content\InvisibleBody";                 Description: "Invisible Body v1.4 (Hide character body in studio for trickery with clothes)"        ; Types: full_en full extra extra_en
-Name: "Content\KKABMX";                        Description: "AIABMX (BonemodX) v5.2.5 (More sliders in character maker)"                           ; Types: full_en full extra extra_en
+Name: "Content\KKABMX";                        Description: "AIABMX (BonemodX) v5.3 (More sliders in character maker)"                             ; Types: full_en full extra extra_en
 Name: "Content\KKABMX\Pregnancy";              Description: "AI_Pregnancy v2.5.3 (Adds pregnancy to gameplay, maker and studio)"                   ; Types: full_en full extra extra_en
-Name: "Content\KSOX";                          Description: "Overlay Mods v7.0.2 (Set custom body, clothes and eye textures)"                      ; Types: full_en full extra extra_en
+Name: "Content\KSOX";                          Description: "Overlay Mods v7.0.3 (Set custom body, clothes and eye textures)"                      ; Types: full_en full extra extra_en
 Name: "Content\MDGQ_BodyChange";               Description: "MdgqBodyChange v1.0 (Needed for some .zipmods)"                                       ; Types: full_en full extra extra_en
-Name: "Content\MaterialEditor";                Description: "Material Editor v3.13.1 (Material editing in maker and studio)"                       ; Types: full_en full extra extra_en
+Name: "Content\MaterialEditor";                Description: "Material Editor v3.13.2 (Material editing in maker and studio)"                       ; Types: full_en full extra extra_en
 Name: "Content\MoreAccessories";               Description: "MoreAccessories v1.2.2 (Unlocks accessory limit above 20)"                            ; Types: full_en full extra extra_en
 Name: "Content\NodesConstraints";              Description: "NodesConstraints v1.4.1 (Connect studio items to create custom animations)"           ; Types: full_en full extra extra_en
 Name: "Content\RendererEditor";                Description: "RendererEditor v1.6.0 (Edit materials of items in Studio)"                            ; Types: full_en full extra extra_en
@@ -163,7 +163,8 @@ Name: "MISC\Trainer\Cheats";                   Description: "Cheat Tools v3.6 (T
 Name: "MISC\ScriptLoader";                     Description: "C# Script Loader v1.2.4 (Runs user scripts from scripts folder)"                      ; Types: full_en full extra extra_en
 Name: "MISC\RuntimeUnityEditor";               Description: "Runtime Unity Editor v6.0 (Debugging and development tool)"                           ; Types: full_en full extra extra_en
 Name: "MISC\FullSave";                         Description: "Full save (OVERWRITES CURRENT SAVE)"                                                  
-Name: "MISC\LoveMachine";                      Description: "LoveMachine v3.19.0 (Adds support for buttplug.io compatible strokers and vibrators)" 
+Name: "MISC\LoveMachine";                      Description: "LoveMachine v4.0.0 (Adds support for buttplug.io compatible strokers and vibrators)"  
+Name: "Misc\HiDPI_Patcher";                    Description: "IMGUI_HiDPI_Patcher v0.0.4.0 (Increases text size in plugin windows (!Known to cause issues with some plugins!))"
 
 [Files]
 #ifndef DEBUG
@@ -320,6 +321,7 @@ Source: "Input\_Plugins\_out\ScriptLoader\*";               DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\Full_save\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\FullSave; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\RuntimeUnityEditor\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\RuntimeUnityEditor; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\LoveMachine_for_AI_Shoujo\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\LoveMachine; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\IMGUI.HiDPI.Patcher.Mono\*";   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Misc\HiDPI_Patcher; Excludes: "manifest.xml"
 
 [Code]
 // Need to put this behind an empty Code category so that the automatic tool doesn't add new file items below this #endif

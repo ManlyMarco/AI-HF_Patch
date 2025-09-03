@@ -53,7 +53,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KoikatuGameplayMods
 
-# AIABMX (BonemodX) v5.2.5
+# AIABMX (BonemodX) v5.3
 - Short description: More sliders in character maker
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/ABMX
@@ -118,7 +118,7 @@
 - Author(s):         Animal42069
 - More information:  https://www.patreon.com/posts/betterlifestyles-66209820
 
-# BetterPenetration v5.0.1.2
+# BetterPenetration v5.0.1.4
 - Short description: Improves how penetration looks in H scenes
 - Author(s):         https://www.patreon.com/Animal42069
 - More information:  https://www.patreon.com/Animal42069/posts?filters%5Btag%5D=BetterPenetration
@@ -176,7 +176,7 @@
 # ClothesAssignment v1.0.0
 - Short description: Girls will look for coordinates that have their name in the closet
 - Author(s):         Hijack Hornet
-- More information:  https://github.com/HijackHornet/IllusionMods
+- More information:  https://github.com/ManlyMarco/HijackHornet_IllusionMods
 
 # ColorPanelX v1.4.1
 - Short description: Improves color picker in maker
@@ -343,6 +343,11 @@
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
 
+# IMGUI_HiDPI_Patcher v0.0.4.0
+- Short description: Increases text size in plugin windows (!Known to cause issues with some plugins!)
+- Author(s):         y=soro
+- More information:  https://github.com/y0soro/Unity.IMGUI.HiDPI.Patcher
+
 # IMGUIScale v0.1.9
 - Short description: Allows sizing certain plugin windows
 - Author(s):         ???
@@ -378,7 +383,7 @@
 - Author(s):         https://github.com/getraid-gg
 - More information:  https://github.com/getraid-gg/AILookSpeedUnlocker
 
-# LoveMachine v3.19.0
+# LoveMachine v4.0.0
 - Short description: Adds support for buttplug.io compatible strokers and vibrators
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
@@ -428,7 +433,7 @@
 - Author(s):         Mikke
 - More information:  https://mikkemods.blogspot.com/
 
-# Material Editor v3.13.1
+# Material Editor v3.13.2
 - Short description: Material editing in maker and studio
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -493,7 +498,7 @@
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/KoikatuGameplayMods
 
-# Overlay Mods v7.0.2
+# Overlay Mods v7.0.3
 - Short description: Set custom body, clothes and eye textures
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion-Overlay-Mods
@@ -671,7 +676,7 @@
 # UIScalerAndWidescreenSupport v1.0.2
 - Short description: Allows widescreen and UI scaling
 - Author(s):         Hijack Hornet
-- More information:  https://github.com/HijackHornet/IllusionMods
+- More information:  https://github.com/ManlyMarco/HijackHornet_IllusionMods
 
 # Uncensor Selector v3.12.3
 - Short description: Support for user-selectable uncensors
