@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "AI-Shoujo"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "2.28"
+#define VERSION "2.29"
 ;-----------------------------------------Sideloader modpack directory
 #define GameDir "L:\HFpatchmaking\HS\MODSOURCE"
 ;#define ModsDir "F:\Games\KoikatsuP\mods"
@@ -16,7 +16,7 @@
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
 ;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
-#define LITE
+;#define LITE
 ;---------------------------------------------------------------------
 
 #include "_Common\Header.iss"
@@ -106,7 +106,7 @@ Source: "{#GameDir}\mods\Sideloader Modpack - Exclusive AIS\*"; DestDir: "{app}\
 ; Source: "{#ModsDir}\mods\Sideloader Modpack - Maps\*"           ; DestDir: "{app}\mods\Sideloader Modpack - Maps"           ; Flags: ignoreversion recursesubdirs; Components: Modpack\Maps
 #endif
 Source: "{#GameDir}\mods\Sideloader Modpack - MaterialEditor Shaders\*"; DestDir: "{app}\mods\Sideloader Modpack - MaterialEditor Shaders"; Flags: ignoreversion recursesubdirs; Components: Modpack\MaterialEditor
-Source: "{#GameDir}\mods\Sideloader Modpack - Uncensor Selector\*"; DestDir: "{app}\mods\Sideloader Modpack - Uncensor Selector"; Flags: ignoreversion recursesubdirs; Components: Modpack\UncensorSelector
+Source: "{#GameDir}\mods\SideloaderModpack-UncensorSelector\*"; DestDir: "{app}\mods\Sideloader Modpack - Uncensor Selector"; Flags: ignoreversion recursesubdirs; Components: Modpack\UncensorSelector
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "{#GameDir}\BepInEx\cache\sideloader_zipmod_cache.bin*";                 DestDir: "{app}\BepinEx\cache";                      Flags: ignoreversion recursesubdirs createallsubdirs;           
 Source: "{#GameDir}\mods\Sideloader Modpack - Studio\Misc\AIS_HS2_QuickAccessBox_Thumbs_Stock.zipmod";                 DestDir: "{app}\mods\Sideloader Modpack - Studio\Misc";    Flags: ignoreversion;
@@ -190,6 +190,9 @@ Type: files; Name: "{app}\AI-Syoujyo_Data\output_log.txt"
 Type: files; Name: "{app}\AI-Shoujo_Data\output_log.txt"
 ; Yikes, someone extracted a sideloader mod...
 Type: files; Name: "{app}\manifest.xml"
+
+; Problematic config files
+Type: files; Name: "{app}\BepInEx\config\com.joan6694.illusionplugins.videoexport.cfg"
 
 ; Just in case. Also resets any hash caches
 Type: filesandordirs; Name: "{app}\[UTILITY] KKManager"; Components: KKManager
