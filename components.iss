@@ -158,6 +158,7 @@ Name: "Feature\HardcoreMode";                  Description: "Hardcore Mode v2.0.
 Name: "Feature\UIScalerAndWidescreenSupport";  Description: "UIScalerAndWidescreenSupport v1.0.2 (Allows widescreen and UI scaling)"               
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
+Name: "MISC\FIX";                              Description: "Fix game registry"                                                                    ; Types: full_en full extra extra_en
 Name: "MISC\FPS";                              Description: "FPS Counter v3.3.1 (Useful for performance testing)"                                  ; Types: full_en full extra extra_en
 Name: "MISC\Trainer";                          Description: "Runtime Unity Editor v2.3.0.0 (Tool for making arbitrary modifications to the game)"  ; Types: full_en full extra extra_en
 Name: "MISC\Trainer\Cheats";                   Description: "Cheat Tools v3.6.1 (Trainer, press F12 to open)"                                      ; Types: full_en full extra extra_en
