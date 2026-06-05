@@ -58,7 +58,7 @@
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/ABMX
 
-# AIPE v2.21.4
+# AIPE v2.21.5
 - Short description: Additional studio object manipulation
 - Author(s):         https://www.patreon.com/joan6694
 - More information:  https://www.patreon.com/joan6694
@@ -77,6 +77,11 @@
 - Short description: Unlock animation speed in studio, type in the text box
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
+# Auto Keyframe v1.3.0.0
+- Short description: Automatically updates any keyframes in Timeline that you change
+- Author(s):         Rinu Nalo
+- More information:  KK Discord/
 
 # Autosave v3.0
 - Short description: Autosave for maker and studio
@@ -103,7 +108,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.SplashScreen
 
-# BepisPlugins v21.1.2.1
+# BepisPlugins v21.1.3
 - Short description: Essential plugins required by many other plugins to function
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/BepisPlugins
@@ -328,7 +333,7 @@
 - Author(s):         https://www.patreon.com/Animal42069
 - More information:  https://www.patreon.com/Animal42069
 
-# IllusionFixes v22.1
+# IllusionFixes v22.2
 - Short description: A collection of important fixes
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
@@ -433,7 +438,7 @@
 - Author(s):         Mikke
 - More information:  https://mikkemods.blogspot.com/
 
-# Material Editor v4.0.2
+# Material Editor v4.0.3
 - Short description: Material editing in maker and studio
 - Author(s):         https://github.com/DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -483,7 +488,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.Utility
 
-# NodesConstraints v1.6.2.1
+# NodesConstraints v1.6.3
 - Short description: Connect studio items to create custom animations
 - Author(s):         https://www.patreon.com/joan6694
 - More information:  https://www.patreon.com/joan6694
@@ -538,7 +543,7 @@
 - Author(s):         Mikke
 - More information:  https://mikkemods.blogspot.com/
 
-# QuickAccessBox v3.4
+# QuickAccessBox v3.4.1
 - Short description: Quick search studio items
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/QuickAccessBox
@@ -562,6 +567,11 @@
 - Short description: Debugging and development tool
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
+
+# Shader Swapper v1.8.1
+- Short description: Swap all shaders to the equivalent Vanilla Plus shader in maker (ctrl + P)
+- Author(s):         IllusionMods
+- More information:  https://github.com/IllusionMods/KK_Plugins
 
 # Silhouette plugin v1.0
 - Short description: Characters can be turned monocolor in studio, saves performance
