@@ -11,7 +11,7 @@
 ;-----------------------------------------Sideloader modpack directory
 #define GameDir "L:\HFpatchmaking\HS\MODSOURCE"
 ;--Don't include any files in the build to make it go fast for testing
-;#define DEBUG
+#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
 ;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
@@ -29,7 +29,7 @@
 ; Used for post install run links, comment out to hide
 #define WikiLink "https://wiki.anime-sharing.com/hgames/index.php?title=AI_Syoujyo"
 #define RepoLink "https://github.com/ManlyMarco/AI-HF_Patch"
-; Can be KoiDiscordLink, IsDiscordLink, or a normal link
+; Can be KoiDiscordLink, IsDiscordLink, or a normal link   
 #define DiscordLink IsDiscordLink
 ;---------------------------------------------------------------------
 
