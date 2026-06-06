@@ -186,6 +186,7 @@ Type: files; Name: "{app}\BepInEx\plugins\PushUpAI.dll"; Check: IsSteam
 Type: files; Name: "{app}\BepInEx\plugins\DHH_AI4.dll"
 Type: files; Name: "{app}\BepInEx\plugins\DHH_AI4.dl_"
 Type: files; Name: "{app}\BepInEx\plugins\Graphics\AIGraphics.dll"
+Type: files; Name: "{app}\BepInEx\plugins\Graphics\AIGraphics.dl_"
 
 ; Clean up old modpacks
 
