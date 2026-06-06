@@ -162,10 +162,9 @@ Name: "Feature\UIScalerAndWidescreenSupport";  Description: "UIScalerAndWidescre
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
 Name: "MISC\FIX";                              Description: "Fix game registry"                                                                    ; Types: full_en full extra extra_en
 Name: "MISC\FPS";                              Description: "FPS Counter v3.3.1 (Useful for performance testing)"                                  ; Types: full_en full extra extra_en
-Name: "MISC\Trainer";                          Description: "Runtime Unity Editor v2.3.0.0 (Tool for making arbitrary modifications to the game)"  ; Types: full_en full extra extra_en
-Name: "MISC\Trainer\Cheats";                   Description: "Cheat Tools v3.6.1 (Trainer, press F12 to open)"                                      ; Types: full_en full extra extra_en
-Name: "MISC\ScriptLoader";                     Description: "C# Script Loader v1.2.4 (Runs user scripts from scripts folder)"                      ; Types: full_en full extra extra_en
 Name: "MISC\RuntimeUnityEditor";               Description: "Runtime Unity Editor v6.3 (Debugging and development tool)"                           ; Types: full_en full extra extra_en
+Name: "MISC\RuntimeUnityEditor\CheatTools";    Description: "Cheat Tools v3.6.1 (Trainer, press F12 to open)"                                      ; Types: full_en full extra extra_en
+Name: "MISC\ScriptLoader";                     Description: "C# Script Loader v1.2.4 (Runs user scripts from scripts folder)"                      ; Types: full_en full extra extra_en
 Name: "MISC\FullSave";                         Description: "Full save (OVERWRITES CURRENT SAVE)"                                                  
 Name: "MISC\LoveMachine";                      Description: "LoveMachine v4.4.0 (Adds support for buttplug.io compatible strokers and vibrators)"  
 Name: "Misc\HiDPI_Patcher";                    Description: "IMGUI_HiDPI_Patcher v0.0.4.0 (Increases text size in plugin windows (!Known to cause issues with some plugins!))"
@@ -322,11 +321,8 @@ Source: "Input\_Plugins\_out\AI_ShaderSwapper\*";           DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\AutoKeyframe.AI\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\AutoKeyframe; Excludes: "manifest.xml"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_Plugins\_out\FPSCounter\*";                 DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\FPS; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\RuntimeUnityEditor\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\Trainer; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\AI_CheatTools\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\Trainer\Cheats; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\ScriptLoader\*";               DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\ScriptLoader; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\Full_save\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\FullSave; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\RuntimeUnityEditor\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\RuntimeUnityEditor; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\LoveMachine_for_AI_Shoujo\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\LoveMachine; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\IMGUI.HiDPI.Patcher.Mono\*";   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Misc\HiDPI_Patcher; Excludes: "manifest.xml"
 
