@@ -1,6 +1,6 @@
 ![preview](header.png)
 # HF Patch for AI-Syoujyo / AI-Shoujo / AI-Girl!
-A patch for [AI-Shoujo](http://www.illusion.jp/preview/aisyoujyo/index.php) with all free updates, fan-made English translations and essential mods. It will allow you to load all character cards and scenes and give you countless gameplay improvements while still keeping the original, uncluttered and clean feel of the game. All content is tested and fixed (or removed) as needed before each update. HF Patch can repair many common problems, try it if you have issues with your game or mod setup.
+A patch for [AI-Shoujo](https://store.steampowered.com/app/1250650/AIShoujoAI/) with all free updates, fan-made English translations and essential mods. It will allow you to load all character cards and scenes and give you countless gameplay improvements while still keeping the original, uncluttered and clean feel of the game. All content is tested and fixed (or removed) as needed before each update. HF Patch can repair many common problems, try it if you have issues with your game or mod setup.
 
 Read the [full HF Patch manual](https://gist.github.com/ManlyMarco/31b78470b8e190686c7ed9686c237e3f) to learn more about what it is, what it does, how to use it, and how to solve common issues.
 
