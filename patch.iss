@@ -165,6 +165,7 @@ Type: files; Name: "{app}\InitSettingEN.exe";               Components: Illusion
 Type: files; Name: "{app}\InitSettingEnglish.exe";          Components: IllusionLaunchers
 Type: files; Name: "{app}\InitSetting EN.exe";              Components: IllusionLaunchers
 Type: files; Name: "{app}\InitSetting English.exe";         Components: IllusionLaunchers
+Type: filesandordirs; Name: "{app}\BepInEx\LauncherEN"; Components: IllusionLaunchers
 Type: filesandordirs; Name: "{app}\UserData\LauncherEN";    Components: IllusionLaunchers
 ; Used by stock launcher in steam release, remove to declutter if using custom launcher
 Type: filesandordirs; Name: "{app}\ja-JP";                  Components: IllusionLaunchers
