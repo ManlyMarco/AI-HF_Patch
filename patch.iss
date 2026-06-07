@@ -296,6 +296,7 @@ begin
     DelTree(ExpandConstant('{app}\scripts'), True, True, True);
     DelTree(ExpandConstant('{app}\frida-scripts'), True, True, True);
     DeleteFile(ExpandConstant('{app}\dxgi.dll'));
+    DeleteFile(ExpandConstant('{app}\d3d11.dll'));
     DeleteFile(ExpandConstant('{app}\frida-gadget.config'));
     DeleteFile(ExpandConstant('{app}\frida-gadget.dll'));
   end;
